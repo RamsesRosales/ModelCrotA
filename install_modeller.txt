@@ -1,0 +1,28 @@
+#install modeller
+
+#in palmetto
+
+anaconda 
+conda create -n Modeller_env
+conda activate Modeller_env #in mac
+source activate Modeller_env #in palmetto
+conda install -y -c salilab modeller
+
+#need to give a key to use it, the key is free for academic use
+
+#my key is : MODELIRANJE
+
+
+#############palmetto###########
+cat /home/ramsesr/.conda/envs/Modeller_env/lib/modeller-10.2/modlib/modeller/config.py 
+
+install_dir = r'/home/ramsesr/.conda/envs/Modeller_env/lib/modeller-10.2'
+license = r'XXXX'
+
+perl -pi -e "s/XXXX/MODELIRANJE/g" /home/ramsesr/.conda/envs/Modeller_env/lib/modeller-10.2/modlib/modeller/config.py 
+
+
+##############in the mac#########
+perl -pi -e "s/XXXX/MODELIRANJE/g" /Users/ramsesrosales/opt/anaconda3/envs/Modeller_env/lib/modeller-10.2/modlib/modeller/config.py
+
+#######
