@@ -1,0 +1,1777 @@
+
+                         MODELLER 10.2, 2021/11/15, r12267
+
+     PROTEIN STRUCTURE MODELLING BY SATISFACTION OF SPATIAL RESTRAINTS
+
+
+                     Copyright(c) 1989-2021 Andrej Sali
+                            All Rights Reserved
+
+                             Written by A. Sali
+                               with help from
+              B. Webb, M.S. Madhusudhan, M-Y. Shen, G.Q. Dong,
+          M.A. Marti-Renom, N. Eswar, F. Alber, M. Topf, B. Oliva,
+             A. Fiser, R. Sanchez, B. Yerkovich, A. Badretdinov,
+                     F. Melo, J.P. Overington, E. Feyfant
+                 University of California, San Francisco, USA
+                    Rockefeller University, New York, USA
+                      Harvard University, Cambridge, USA
+                   Imperial Cancer Research Fund, London, UK
+              Birkbeck College, University of London, London, UK
+
+
+Kind, OS, HostName, Kernel, Processor: 4, Darwin Ramsess-iMac 19.6.0 x86_64
+Date and time of compilation         : 2021/11/15 11:17:56
+MODELLER executable type             : mac10v4-intel64
+Job starting time (YY/MM/DD HH:MM:SS): 2022/02/05 23:24:02
+
+
+check_ali___> Checking the sequence-structure alignment. 
+
+Implied intrachain target CA(i)-CA(i+1) distances longer than  8.0 angstroms:
+
+ALN_POS  TMPL  RID1  RID2  NAM1  NAM2     DIST
+----------------------------------------------
+END OF TABLE
+read_to_681_> topology.submodel read from topology file:        3
+patch_s_522_> Number of disulfides patched in MODEL:        5
+mdtrsr__446W> A potential that relies on one protein is used, yet you have at
+              least one known structure available. MDT, not library, potential is used.
+0 atoms in HETATM/BLK residues constrained
+to protein atoms within 2.30 angstroms
+and protein CA atoms within 10.00 angstroms
+0 atoms in residues without defined topology
+constrained to be rigid bodies
+condens_443_> Restraints marked for deletion were removed.
+              Total number of restraints before, now:     6653     6090
+>> Model assessment by DOPE-HR potential
+iatmcls_286W> MODEL atom not classified:  TYR:OXT  TYR
+
+
+>> ENERGY; Differences between the model's features and restraints:
+Number of all residues in MODEL                   :       80
+Number of all, selected real atoms                :      619     619
+Number of all, selected pseudo atoms              :        0       0
+Number of all static, selected restraints         :     6090    6090
+COVALENT_CYS                                      :        F
+NONBONDED_SEL_ATOMS                               :        1
+Number of non-bonded pairs (excluding 1-2,1-3,1-4):    76921
+Dynamic pairs routine                             : 1, NATM x NATM double loop
+Atomic shift for contacts update (UPDATE_DYNAMIC) :    0.390
+LENNARD_JONES_SWITCH                              :    6.500   7.500
+COULOMB_JONES_SWITCH                              :    6.500   7.500
+RESIDUE_SPAN_RANGE                                :        1    9999
+NLOGN_USE                                         :       15
+CONTACT_SHELL                                     :   15.000
+DYNAMIC_PAIRS,_SPHERE,_COULOMB,_LENNARD,_MODELLER :        T       F       F       F       T
+SPHERE_STDV                                       :    0.050
+RADII_FACTOR                                      :    0.820
+Current energy                                    :       -4832.0264
+
+
+
+
+<< end of ENERGY.
+DOPE-HR score               : -4832.026367
+>> Model assessment by GA341 potential
+
+Surface library          : /Users/ramsesrosales/opt/anaconda3/envs/Modeller_env/lib/modeller-10.2/modlib/surf5.de
+Pair library             : /Users/ramsesrosales/opt/anaconda3/envs/Modeller_env/lib/modeller-10.2/modlib/pair9.de
+Chain identifier         : _
+% sequence identity      :    57.500000
+Sequence length          :           80
+Compactness              :     0.341574
+Native energy (pair)     :  -106.956465
+Native energy (surface)  :    -2.499251
+Native energy (combined) :    -5.442164
+Z score (pair)           :    -5.478402
+Z score (surface)        :    -3.466951
+Z score (combined)       :    -6.167282
+GA341 score              :     1.000000
+
+
+
+>> ENERGY; Differences between the model's features and restraints:
+Number of all residues in MODEL                   :       80
+Number of all, selected real atoms                :      619     619
+Number of all, selected pseudo atoms              :        0       0
+Number of all static, selected restraints         :     6090    6090
+COVALENT_CYS                                      :        F
+NONBONDED_SEL_ATOMS                               :        1
+Number of non-bonded pairs (excluding 1-2,1-3,1-4):     1315
+Dynamic pairs routine                             : 2, NATM x NATM cell sorting
+Atomic shift for contacts update (UPDATE_DYNAMIC) :    0.390
+LENNARD_JONES_SWITCH                              :    6.500   7.500
+COULOMB_JONES_SWITCH                              :    6.500   7.500
+RESIDUE_SPAN_RANGE                                :        0   99999
+NLOGN_USE                                         :       15
+CONTACT_SHELL                                     :    4.000
+DYNAMIC_PAIRS,_SPHERE,_COULOMB,_LENNARD,_MODELLER :        T       T       F       F       F
+SPHERE_STDV                                       :    0.050
+RADII_FACTOR                                      :    0.820
+Current energy                                    :         340.8108
+
+
+
+
+
+Summary of the restraint violations: 
+
+   NUM     ... number of restraints.
+   NUMVI   ... number of restraints with RVIOL > VIOL_REPORT_CUT[i].
+   RVIOL   ... relative difference from the best value.
+   NUMVP   ... number of restraints with -Ln(pdf) > VIOL_REPORT_CUT2[i].
+   RMS_1   ... RMS(feature, minimally_violated_basis_restraint, NUMB).
+   RMS_2   ... RMS(feature, best_value, NUMB).
+   MOL.PDF ... scaled contribution to -Ln(Molecular pdf).
+
+ #                     RESTRAINT_GROUP      NUM   NUMVI  NUMVP   RMS_1   RMS_2         MOL.PDF     S_i
+------------------------------------------------------------------------------------------------------
+ 1 Bond length potential              :     632       0      0   0.005   0.005      3.9266       1.000
+ 2 Bond angle potential               :     851       0      3   1.781   1.781      53.793       1.000
+ 3 Stereochemical cosine torsion poten:     405       0      9  43.804  43.804      121.72       1.000
+ 4 Stereochemical improper torsion pot:     263       0      0   1.055   1.055      6.7786       1.000
+ 5 Soft-sphere overlap restraints     :    1315       0      0   0.002   0.002     0.88838       1.000
+ 6 Lennard-Jones 6-12 potential       :       0       0      0   0.000   0.000      0.0000       1.000
+ 7 Coulomb point-point electrostatic p:       0       0      0   0.000   0.000      0.0000       1.000
+ 8 H-bonding potential                :       0       0      0   0.000   0.000      0.0000       1.000
+ 9 Distance restraints 1 (CA-CA)      :    1124       0      0   0.118   0.118      17.525       1.000
+10 Distance restraints 2 (N-O)        :    1343       0      3   0.170   0.170      39.479       1.000
+11 Mainchain Phi dihedral restraints  :       0       0      0   0.000   0.000      0.0000       1.000
+12 Mainchain Psi dihedral restraints  :       0       0      0   0.000   0.000      0.0000       1.000
+13 Mainchain Omega dihedral restraints:      79       0      0   3.735   3.735      12.997       1.000
+14 Sidechain Chi_1 dihedral restraints:      66       0      0  69.103  69.103      15.464       1.000
+15 Sidechain Chi_2 dihedral restraints:      48       0      0  47.703  47.703      15.421       1.000
+16 Sidechain Chi_3 dihedral restraints:      21       0      0  91.371  91.371      17.840       1.000
+17 Sidechain Chi_4 dihedral restraints:       9       0      0  62.126  62.126      6.7790       1.000
+18 Disulfide distance restraints      :       5       0      0   0.005   0.005     0.20314E-01   1.000
+19 Disulfide angle restraints         :      10       0      0   2.509   2.509      1.3900       1.000
+20 Disulfide dihedral angle restraints:       5       0      0  12.118  12.118     0.85146       1.000
+21 Lower bound distance restraints    :       0       0      0   0.000   0.000      0.0000       1.000
+22 Upper bound distance restraints    :       0       0      0   0.000   0.000      0.0000       1.000
+23 Distance restraints 3 (SDCH-MNCH)  :     803       0      0   0.266   0.266      8.8215       1.000
+24 Sidechain Chi_5 dihedral restraints:       0       0      0   0.000   0.000      0.0000       1.000
+25 Phi/Psi pair of dihedral restraints:      78       3      9  27.914  39.242      5.2742       1.000
+26 Distance restraints 4 (SDCH-SDCH)  :     348       0      0   0.459   0.459      11.844       1.000
+27 Distance restraints 5 (X-Y)        :       0       0      0   0.000   0.000      0.0000       1.000
+28 NMR distance restraints 6 (X-Y)    :       0       0      0   0.000   0.000      0.0000       1.000
+29 NMR distance restraints 7 (X-Y)    :       0       0      0   0.000   0.000      0.0000       1.000
+30 Minimal distance restraints        :       0       0      0   0.000   0.000      0.0000       1.000
+31 Non-bonded restraints              :       0       0      0   0.000   0.000      0.0000       1.000
+32 Atomic accessibility restraints    :       0       0      0   0.000   0.000      0.0000       1.000
+33 Atomic density restraints          :       0       0      0   0.000   0.000      0.0000       1.000
+34 Absolute position restraints       :       0       0      0   0.000   0.000      0.0000       1.000
+35 Dihedral angle difference restraint:       0       0      0   0.000   0.000      0.0000       1.000
+36 GBSA implicit solvent potential    :       0       0      0   0.000   0.000      0.0000       1.000
+37 EM density fitting potential       :       0       0      0   0.000   0.000      0.0000       1.000
+38 SAXS restraints                    :       0       0      0   0.000   0.000      0.0000       1.000
+39 Symmetry restraints                :       0       0      0   0.000   0.000      0.0000       1.000
+
+
+
+# Heavy relative violation of each residue is written to: CgSCrotA1.V99990001
+# The profile is NOT normalized by the number of restraints.
+# The profiles are smoothed over a window of residues:    1
+# The sum of all numbers in the file:    5916.2148
+
+
+
+List of the violated restraints:
+   A restraint is violated when the relative difference
+   from the best value (RVIOL) is larger than CUTOFF.
+
+   ICSR   ... index of a restraint in the current set.
+   RESNO  ... residue numbers of the first two atoms.
+   ATM    ... IUPAC atom names of the first two atoms.
+   FEAT   ... the value of the feature in the model.
+   restr  ... the mean of the basis restraint with the smallest
+              difference from the model (local minimum).
+   viol   ... difference from the local minimum.
+   rviol  ... relative difference from the local minimum.
+   RESTR  ... the best value (global minimum).
+   VIOL   ... difference from the best value.
+   RVIOL  ... relative difference from the best value.
+
+
+-------------------------------------------------------------------------------------------------
+
+Feature 25                           : Phi/Psi pair of dihedral restraints     
+List of the RVIOL violations larger than   :       6.5000
+
+    #   ICSR  RESNO1/2 ATM1/2   INDATM1/2    FEAT   restr    viol   rviol   RESTR    VIOL   RVIOL
+    1   2202  31V  32T C   N     238  240  -48.42 -124.80   76.84    3.85  -63.20  177.81   23.78
+    1         32T  32T N   CA    240  241  135.09  143.50                  -42.10
+    2   2203  32T  33G C   N     245  247  107.96   82.20   38.30    1.14  -62.40  171.70   31.45
+    2         33G  33G N   CA    247  248  -19.84    8.50                  -41.20
+    3   2246  75D  76N C   N     573  575  -93.95  -63.20   73.12    7.92  -63.20   73.12    7.92
+    3         76N  76N N   CA    575  576   25.24  -41.10                  -41.10
+
+
+report______> Distribution of short non-bonded contacts:
+
+
+DISTANCE1:  0.00 2.10 2.20 2.30 2.40 2.50 2.60 2.70 2.80 2.90 3.00 3.10 3.20 3.30 3.40
+DISTANCE2:  2.10 2.20 2.30 2.40 2.50 2.60 2.70 2.80 2.90 3.00 3.10 3.20 3.30 3.40 3.50
+FREQUENCY:     0    0    0    0    0    3   12   25   48   51   66   74  108  125   88
+
+
+<< end of ENERGY.
+iupac_m_397W> Atoms were not swapped because of the uncertainty of how to handle the H atom.
+>> Model assessment by DOPE-HR potential
+iatmcls_286W> MODEL atom not classified:  TYR:OXT  TYR
+
+
+>> ENERGY; Differences between the model's features and restraints:
+Number of all residues in MODEL                   :       80
+Number of all, selected real atoms                :      619     619
+Number of all, selected pseudo atoms              :        0       0
+Number of all static, selected restraints         :     6090    6090
+COVALENT_CYS                                      :        F
+NONBONDED_SEL_ATOMS                               :        1
+Number of non-bonded pairs (excluding 1-2,1-3,1-4):    77850
+Dynamic pairs routine                             : 1, NATM x NATM double loop
+Atomic shift for contacts update (UPDATE_DYNAMIC) :    0.390
+LENNARD_JONES_SWITCH                              :    6.500   7.500
+COULOMB_JONES_SWITCH                              :    6.500   7.500
+RESIDUE_SPAN_RANGE                                :        1    9999
+NLOGN_USE                                         :       15
+CONTACT_SHELL                                     :   15.000
+DYNAMIC_PAIRS,_SPHERE,_COULOMB,_LENNARD,_MODELLER :        T       F       F       F       T
+SPHERE_STDV                                       :    0.050
+RADII_FACTOR                                      :    0.820
+Current energy                                    :       -4585.9062
+
+
+
+
+<< end of ENERGY.
+DOPE-HR score               : -4585.906250
+>> Model assessment by GA341 potential
+
+Surface library          : /Users/ramsesrosales/opt/anaconda3/envs/Modeller_env/lib/modeller-10.2/modlib/surf5.de
+Pair library             : /Users/ramsesrosales/opt/anaconda3/envs/Modeller_env/lib/modeller-10.2/modlib/pair9.de
+Chain identifier         : _
+% sequence identity      :    57.500000
+Sequence length          :           80
+Compactness              :     0.344565
+Native energy (pair)     :   -97.352354
+Native energy (surface)  :    -1.094146
+Native energy (combined) :    -4.338018
+Z score (pair)           :    -4.857000
+Z score (surface)        :    -3.033411
+Z score (combined)       :    -5.345067
+GA341 score              :     1.000000
+
+
+
+>> ENERGY; Differences between the model's features and restraints:
+Number of all residues in MODEL                   :       80
+Number of all, selected real atoms                :      619     619
+Number of all, selected pseudo atoms              :        0       0
+Number of all static, selected restraints         :     6090    6090
+COVALENT_CYS                                      :        F
+NONBONDED_SEL_ATOMS                               :        1
+Number of non-bonded pairs (excluding 1-2,1-3,1-4):     1354
+Dynamic pairs routine                             : 2, NATM x NATM cell sorting
+Atomic shift for contacts update (UPDATE_DYNAMIC) :    0.390
+LENNARD_JONES_SWITCH                              :    6.500   7.500
+COULOMB_JONES_SWITCH                              :    6.500   7.500
+RESIDUE_SPAN_RANGE                                :        0   99999
+NLOGN_USE                                         :       15
+CONTACT_SHELL                                     :    4.000
+DYNAMIC_PAIRS,_SPHERE,_COULOMB,_LENNARD,_MODELLER :        T       T       F       F       F
+SPHERE_STDV                                       :    0.050
+RADII_FACTOR                                      :    0.820
+Current energy                                    :         326.9240
+
+
+
+
+
+Summary of the restraint violations: 
+
+   NUM     ... number of restraints.
+   NUMVI   ... number of restraints with RVIOL > VIOL_REPORT_CUT[i].
+   RVIOL   ... relative difference from the best value.
+   NUMVP   ... number of restraints with -Ln(pdf) > VIOL_REPORT_CUT2[i].
+   RMS_1   ... RMS(feature, minimally_violated_basis_restraint, NUMB).
+   RMS_2   ... RMS(feature, best_value, NUMB).
+   MOL.PDF ... scaled contribution to -Ln(Molecular pdf).
+
+ #                     RESTRAINT_GROUP      NUM   NUMVI  NUMVP   RMS_1   RMS_2         MOL.PDF     S_i
+------------------------------------------------------------------------------------------------------
+ 1 Bond length potential              :     632       0      0   0.005   0.005      4.2727       1.000
+ 2 Bond angle potential               :     851       0      3   1.880   1.880      59.657       1.000
+ 3 Stereochemical cosine torsion poten:     405       0      8  43.510  43.510      121.27       1.000
+ 4 Stereochemical improper torsion pot:     263       0      0   1.050   1.050      6.5916       1.000
+ 5 Soft-sphere overlap restraints     :    1354       0      0   0.002   0.002     0.48900       1.000
+ 6 Lennard-Jones 6-12 potential       :       0       0      0   0.000   0.000      0.0000       1.000
+ 7 Coulomb point-point electrostatic p:       0       0      0   0.000   0.000      0.0000       1.000
+ 8 H-bonding potential                :       0       0      0   0.000   0.000      0.0000       1.000
+ 9 Distance restraints 1 (CA-CA)      :    1124       0      0   0.114   0.114      17.112       1.000
+10 Distance restraints 2 (N-O)        :    1343       0      0   0.142   0.142      29.499       1.000
+11 Mainchain Phi dihedral restraints  :       0       0      0   0.000   0.000      0.0000       1.000
+12 Mainchain Psi dihedral restraints  :       0       0      0   0.000   0.000      0.0000       1.000
+13 Mainchain Omega dihedral restraints:      79       0      0   3.929   3.929      14.382       1.000
+14 Sidechain Chi_1 dihedral restraints:      66       0      0  63.208  63.208      11.499       1.000
+15 Sidechain Chi_2 dihedral restraints:      48       0      1  64.081  64.081      21.204       1.000
+16 Sidechain Chi_3 dihedral restraints:      21       0      0  86.059  86.059      15.432       1.000
+17 Sidechain Chi_4 dihedral restraints:       9       0      0  86.836  86.836      6.4633       1.000
+18 Disulfide distance restraints      :       5       0      0   0.006   0.006     0.30228E-01   1.000
+19 Disulfide angle restraints         :      10       0      0   2.308   2.308      1.1766       1.000
+20 Disulfide dihedral angle restraints:       5       0      0  13.636  13.636      1.0773       1.000
+21 Lower bound distance restraints    :       0       0      0   0.000   0.000      0.0000       1.000
+22 Upper bound distance restraints    :       0       0      0   0.000   0.000      0.0000       1.000
+23 Distance restraints 3 (SDCH-MNCH)  :     803       0      0   0.267   0.267      9.1461       1.000
+24 Sidechain Chi_5 dihedral restraints:       0       0      0   0.000   0.000      0.0000       1.000
+25 Phi/Psi pair of dihedral restraints:      78       0      8  25.918  27.443    -0.15534       1.000
+26 Distance restraints 4 (SDCH-SDCH)  :     348       0      0   0.378   0.378      7.7800       1.000
+27 Distance restraints 5 (X-Y)        :       0       0      0   0.000   0.000      0.0000       1.000
+28 NMR distance restraints 6 (X-Y)    :       0       0      0   0.000   0.000      0.0000       1.000
+29 NMR distance restraints 7 (X-Y)    :       0       0      0   0.000   0.000      0.0000       1.000
+30 Minimal distance restraints        :       0       0      0   0.000   0.000      0.0000       1.000
+31 Non-bonded restraints              :       0       0      0   0.000   0.000      0.0000       1.000
+32 Atomic accessibility restraints    :       0       0      0   0.000   0.000      0.0000       1.000
+33 Atomic density restraints          :       0       0      0   0.000   0.000      0.0000       1.000
+34 Absolute position restraints       :       0       0      0   0.000   0.000      0.0000       1.000
+35 Dihedral angle difference restraint:       0       0      0   0.000   0.000      0.0000       1.000
+36 GBSA implicit solvent potential    :       0       0      0   0.000   0.000      0.0000       1.000
+37 EM density fitting potential       :       0       0      0   0.000   0.000      0.0000       1.000
+38 SAXS restraints                    :       0       0      0   0.000   0.000      0.0000       1.000
+39 Symmetry restraints                :       0       0      0   0.000   0.000      0.0000       1.000
+
+
+
+# Heavy relative violation of each residue is written to: CgSCrotA1.V99990002
+# The profile is NOT normalized by the number of restraints.
+# The profiles are smoothed over a window of residues:    1
+# The sum of all numbers in the file:    5584.7539
+
+
+
+List of the violated restraints:
+   A restraint is violated when the relative difference
+   from the best value (RVIOL) is larger than CUTOFF.
+
+   ICSR   ... index of a restraint in the current set.
+   RESNO  ... residue numbers of the first two atoms.
+   ATM    ... IUPAC atom names of the first two atoms.
+   FEAT   ... the value of the feature in the model.
+   restr  ... the mean of the basis restraint with the smallest
+              difference from the model (local minimum).
+   viol   ... difference from the local minimum.
+   rviol  ... relative difference from the local minimum.
+   RESTR  ... the best value (global minimum).
+   VIOL   ... difference from the best value.
+   RVIOL  ... relative difference from the best value.
+
+
+
+report______> Distribution of short non-bonded contacts:
+
+
+DISTANCE1:  0.00 2.10 2.20 2.30 2.40 2.50 2.60 2.70 2.80 2.90 3.00 3.10 3.20 3.30 3.40
+DISTANCE2:  2.10 2.20 2.30 2.40 2.50 2.60 2.70 2.80 2.90 3.00 3.10 3.20 3.30 3.40 3.50
+FREQUENCY:     0    0    0    0    0    8    8   25   50   62   59   80  112  118  104
+
+
+<< end of ENERGY.
+iupac_m_397W> Atoms were not swapped because of the uncertainty of how to handle the H atom.
+>> Model assessment by DOPE-HR potential
+iatmcls_286W> MODEL atom not classified:  TYR:OXT  TYR
+
+
+>> ENERGY; Differences between the model's features and restraints:
+Number of all residues in MODEL                   :       80
+Number of all, selected real atoms                :      619     619
+Number of all, selected pseudo atoms              :        0       0
+Number of all static, selected restraints         :     6090    6090
+COVALENT_CYS                                      :        F
+NONBONDED_SEL_ATOMS                               :        1
+Number of non-bonded pairs (excluding 1-2,1-3,1-4):    76264
+Dynamic pairs routine                             : 1, NATM x NATM double loop
+Atomic shift for contacts update (UPDATE_DYNAMIC) :    0.390
+LENNARD_JONES_SWITCH                              :    6.500   7.500
+COULOMB_JONES_SWITCH                              :    6.500   7.500
+RESIDUE_SPAN_RANGE                                :        1    9999
+NLOGN_USE                                         :       15
+CONTACT_SHELL                                     :   15.000
+DYNAMIC_PAIRS,_SPHERE,_COULOMB,_LENNARD,_MODELLER :        T       F       F       F       T
+SPHERE_STDV                                       :    0.050
+RADII_FACTOR                                      :    0.820
+Current energy                                    :       -4829.7236
+
+
+
+
+<< end of ENERGY.
+DOPE-HR score               : -4829.723633
+>> Model assessment by GA341 potential
+
+Surface library          : /Users/ramsesrosales/opt/anaconda3/envs/Modeller_env/lib/modeller-10.2/modlib/surf5.de
+Pair library             : /Users/ramsesrosales/opt/anaconda3/envs/Modeller_env/lib/modeller-10.2/modlib/pair9.de
+Chain identifier         : _
+% sequence identity      :    57.500000
+Sequence length          :           80
+Compactness              :     0.338014
+Native energy (pair)     :  -103.281346
+Native energy (surface)  :    -0.254412
+Native energy (combined) :    -4.318009
+Z score (pair)           :    -5.132120
+Z score (surface)        :    -2.630166
+Z score (combined)       :    -5.310175
+GA341 score              :     1.000000
+
+
+
+>> ENERGY; Differences between the model's features and restraints:
+Number of all residues in MODEL                   :       80
+Number of all, selected real atoms                :      619     619
+Number of all, selected pseudo atoms              :        0       0
+Number of all static, selected restraints         :     6090    6090
+COVALENT_CYS                                      :        F
+NONBONDED_SEL_ATOMS                               :        1
+Number of non-bonded pairs (excluding 1-2,1-3,1-4):     1289
+Dynamic pairs routine                             : 2, NATM x NATM cell sorting
+Atomic shift for contacts update (UPDATE_DYNAMIC) :    0.390
+LENNARD_JONES_SWITCH                              :    6.500   7.500
+COULOMB_JONES_SWITCH                              :    6.500   7.500
+RESIDUE_SPAN_RANGE                                :        0   99999
+NLOGN_USE                                         :       15
+CONTACT_SHELL                                     :    4.000
+DYNAMIC_PAIRS,_SPHERE,_COULOMB,_LENNARD,_MODELLER :        T       T       F       F       F
+SPHERE_STDV                                       :    0.050
+RADII_FACTOR                                      :    0.820
+Current energy                                    :         393.5596
+
+
+
+
+
+Summary of the restraint violations: 
+
+   NUM     ... number of restraints.
+   NUMVI   ... number of restraints with RVIOL > VIOL_REPORT_CUT[i].
+   RVIOL   ... relative difference from the best value.
+   NUMVP   ... number of restraints with -Ln(pdf) > VIOL_REPORT_CUT2[i].
+   RMS_1   ... RMS(feature, minimally_violated_basis_restraint, NUMB).
+   RMS_2   ... RMS(feature, best_value, NUMB).
+   MOL.PDF ... scaled contribution to -Ln(Molecular pdf).
+
+ #                     RESTRAINT_GROUP      NUM   NUMVI  NUMVP   RMS_1   RMS_2         MOL.PDF     S_i
+------------------------------------------------------------------------------------------------------
+ 1 Bond length potential              :     632       0      0   0.006   0.006      5.9129       1.000
+ 2 Bond angle potential               :     851       0      2   1.974   1.974      66.493       1.000
+ 3 Stereochemical cosine torsion poten:     405       0      8  44.309  44.309      123.49       1.000
+ 4 Stereochemical improper torsion pot:     263       0      0   1.236   1.236      8.5463       1.000
+ 5 Soft-sphere overlap restraints     :    1289       0      0   0.002   0.002     0.43971       1.000
+ 6 Lennard-Jones 6-12 potential       :       0       0      0   0.000   0.000      0.0000       1.000
+ 7 Coulomb point-point electrostatic p:       0       0      0   0.000   0.000      0.0000       1.000
+ 8 H-bonding potential                :       0       0      0   0.000   0.000      0.0000       1.000
+ 9 Distance restraints 1 (CA-CA)      :    1124       0      0   0.138   0.138      21.774       1.000
+10 Distance restraints 2 (N-O)        :    1343       0      0   0.151   0.151      33.921       1.000
+11 Mainchain Phi dihedral restraints  :       0       0      0   0.000   0.000      0.0000       1.000
+12 Mainchain Psi dihedral restraints  :       0       0      0   0.000   0.000      0.0000       1.000
+13 Mainchain Omega dihedral restraints:      79       0      0   3.888   3.888      14.081       1.000
+14 Sidechain Chi_1 dihedral restraints:      66       0      2  69.890  69.890      24.687       1.000
+15 Sidechain Chi_2 dihedral restraints:      48       0      2  47.238  47.238      21.327       1.000
+16 Sidechain Chi_3 dihedral restraints:      21       0      0  76.583  76.583      14.341       1.000
+17 Sidechain Chi_4 dihedral restraints:       9       0      0  99.236  99.236      6.0453       1.000
+18 Disulfide distance restraints      :       5       0      0   0.009   0.009     0.69786E-01   1.000
+19 Disulfide angle restraints         :      10       0      0   3.066   3.066      2.0754       1.000
+20 Disulfide dihedral angle restraints:       5       0      0  16.992  16.992      1.3687       1.000
+21 Lower bound distance restraints    :       0       0      0   0.000   0.000      0.0000       1.000
+22 Upper bound distance restraints    :       0       0      0   0.000   0.000      0.0000       1.000
+23 Distance restraints 3 (SDCH-MNCH)  :     803       0      0   0.297   0.297      12.730       1.000
+24 Sidechain Chi_5 dihedral restraints:       0       0      0   0.000   0.000      0.0000       1.000
+25 Phi/Psi pair of dihedral restraints:      78       2      8  27.234  28.688      6.2065       1.000
+26 Distance restraints 4 (SDCH-SDCH)  :     348       0      0   0.740   0.740      30.057       1.000
+27 Distance restraints 5 (X-Y)        :       0       0      0   0.000   0.000      0.0000       1.000
+28 NMR distance restraints 6 (X-Y)    :       0       0      0   0.000   0.000      0.0000       1.000
+29 NMR distance restraints 7 (X-Y)    :       0       0      0   0.000   0.000      0.0000       1.000
+30 Minimal distance restraints        :       0       0      0   0.000   0.000      0.0000       1.000
+31 Non-bonded restraints              :       0       0      0   0.000   0.000      0.0000       1.000
+32 Atomic accessibility restraints    :       0       0      0   0.000   0.000      0.0000       1.000
+33 Atomic density restraints          :       0       0      0   0.000   0.000      0.0000       1.000
+34 Absolute position restraints       :       0       0      0   0.000   0.000      0.0000       1.000
+35 Dihedral angle difference restraint:       0       0      0   0.000   0.000      0.0000       1.000
+36 GBSA implicit solvent potential    :       0       0      0   0.000   0.000      0.0000       1.000
+37 EM density fitting potential       :       0       0      0   0.000   0.000      0.0000       1.000
+38 SAXS restraints                    :       0       0      0   0.000   0.000      0.0000       1.000
+39 Symmetry restraints                :       0       0      0   0.000   0.000      0.0000       1.000
+
+
+
+# Heavy relative violation of each residue is written to: CgSCrotA1.V99990003
+# The profile is NOT normalized by the number of restraints.
+# The profiles are smoothed over a window of residues:    1
+# The sum of all numbers in the file:    6120.6084
+
+
+
+List of the violated restraints:
+   A restraint is violated when the relative difference
+   from the best value (RVIOL) is larger than CUTOFF.
+
+   ICSR   ... index of a restraint in the current set.
+   RESNO  ... residue numbers of the first two atoms.
+   ATM    ... IUPAC atom names of the first two atoms.
+   FEAT   ... the value of the feature in the model.
+   restr  ... the mean of the basis restraint with the smallest
+              difference from the model (local minimum).
+   viol   ... difference from the local minimum.
+   rviol  ... relative difference from the local minimum.
+   RESTR  ... the best value (global minimum).
+   VIOL   ... difference from the best value.
+   RVIOL  ... relative difference from the best value.
+
+
+-------------------------------------------------------------------------------------------------
+
+Feature 25                           : Phi/Psi pair of dihedral restraints     
+List of the RVIOL violations larger than   :       6.5000
+
+    #   ICSR  RESNO1/2 ATM1/2   INDATM1/2    FEAT   restr    viol   rviol   RESTR    VIOL   RVIOL
+    1   2201  30K  31V C   N     231  233  -78.79  -62.40   58.69    6.64  -62.40   58.69    6.64
+    1         31V  31V N   CA    233  234   13.95  -42.40                  -42.40
+    2   2246  75D  76N C   N     573  575  -93.15  -63.20   75.97    8.26  -63.20   75.97    8.26
+    2         76N  76N N   CA    575  576   28.72  -41.10                  -41.10
+
+
+report______> Distribution of short non-bonded contacts:
+
+
+DISTANCE1:  0.00 2.10 2.20 2.30 2.40 2.50 2.60 2.70 2.80 2.90 3.00 3.10 3.20 3.30 3.40
+DISTANCE2:  2.10 2.20 2.30 2.40 2.50 2.60 2.70 2.80 2.90 3.00 3.10 3.20 3.30 3.40 3.50
+FREQUENCY:     0    0    0    0    0    2    5   16   42   55   68   72   98  122  103
+
+
+<< end of ENERGY.
+iupac_m_397W> Atoms were not swapped because of the uncertainty of how to handle the H atom.
+iupac_m_397W> Atoms were not swapped because of the uncertainty of how to handle the H atom.
+>> Model assessment by DOPE-HR potential
+iatmcls_286W> MODEL atom not classified:  TYR:OXT  TYR
+
+
+>> ENERGY; Differences between the model's features and restraints:
+Number of all residues in MODEL                   :       80
+Number of all, selected real atoms                :      619     619
+Number of all, selected pseudo atoms              :        0       0
+Number of all static, selected restraints         :     6090    6090
+COVALENT_CYS                                      :        F
+NONBONDED_SEL_ATOMS                               :        1
+Number of non-bonded pairs (excluding 1-2,1-3,1-4):    77102
+Dynamic pairs routine                             : 1, NATM x NATM double loop
+Atomic shift for contacts update (UPDATE_DYNAMIC) :    0.390
+LENNARD_JONES_SWITCH                              :    6.500   7.500
+COULOMB_JONES_SWITCH                              :    6.500   7.500
+RESIDUE_SPAN_RANGE                                :        1    9999
+NLOGN_USE                                         :       15
+CONTACT_SHELL                                     :   15.000
+DYNAMIC_PAIRS,_SPHERE,_COULOMB,_LENNARD,_MODELLER :        T       F       F       F       T
+SPHERE_STDV                                       :    0.050
+RADII_FACTOR                                      :    0.820
+Current energy                                    :       -4960.0781
+
+
+
+
+<< end of ENERGY.
+DOPE-HR score               : -4960.078125
+>> Model assessment by GA341 potential
+
+Surface library          : /Users/ramsesrosales/opt/anaconda3/envs/Modeller_env/lib/modeller-10.2/modlib/surf5.de
+Pair library             : /Users/ramsesrosales/opt/anaconda3/envs/Modeller_env/lib/modeller-10.2/modlib/pair9.de
+Chain identifier         : _
+% sequence identity      :    57.500000
+Sequence length          :           80
+Compactness              :     0.343648
+Native energy (pair)     :  -113.775389
+Native energy (surface)  :    -2.255344
+Native energy (combined) :    -5.657480
+Z score (pair)           :    -5.741668
+Z score (surface)        :    -3.482882
+Z score (combined)       :    -6.375444
+GA341 score              :     1.000000
+
+
+
+>> ENERGY; Differences between the model's features and restraints:
+Number of all residues in MODEL                   :       80
+Number of all, selected real atoms                :      619     619
+Number of all, selected pseudo atoms              :        0       0
+Number of all static, selected restraints         :     6090    6090
+COVALENT_CYS                                      :        F
+NONBONDED_SEL_ATOMS                               :        1
+Number of non-bonded pairs (excluding 1-2,1-3,1-4):     1311
+Dynamic pairs routine                             : 2, NATM x NATM cell sorting
+Atomic shift for contacts update (UPDATE_DYNAMIC) :    0.390
+LENNARD_JONES_SWITCH                              :    6.500   7.500
+COULOMB_JONES_SWITCH                              :    6.500   7.500
+RESIDUE_SPAN_RANGE                                :        0   99999
+NLOGN_USE                                         :       15
+CONTACT_SHELL                                     :    4.000
+DYNAMIC_PAIRS,_SPHERE,_COULOMB,_LENNARD,_MODELLER :        T       T       F       F       F
+SPHERE_STDV                                       :    0.050
+RADII_FACTOR                                      :    0.820
+Current energy                                    :         369.5626
+
+
+
+
+
+Summary of the restraint violations: 
+
+   NUM     ... number of restraints.
+   NUMVI   ... number of restraints with RVIOL > VIOL_REPORT_CUT[i].
+   RVIOL   ... relative difference from the best value.
+   NUMVP   ... number of restraints with -Ln(pdf) > VIOL_REPORT_CUT2[i].
+   RMS_1   ... RMS(feature, minimally_violated_basis_restraint, NUMB).
+   RMS_2   ... RMS(feature, best_value, NUMB).
+   MOL.PDF ... scaled contribution to -Ln(Molecular pdf).
+
+ #                     RESTRAINT_GROUP      NUM   NUMVI  NUMVP   RMS_1   RMS_2         MOL.PDF     S_i
+------------------------------------------------------------------------------------------------------
+ 1 Bond length potential              :     632       0      0   0.005   0.005      3.6073       1.000
+ 2 Bond angle potential               :     851       0      1   1.798   1.798      53.738       1.000
+ 3 Stereochemical cosine torsion poten:     405       0     10  44.838  44.838      126.44       1.000
+ 4 Stereochemical improper torsion pot:     263       0      0   0.938   0.938      5.2025       1.000
+ 5 Soft-sphere overlap restraints     :    1311       0      0   0.003   0.003      1.1584       1.000
+ 6 Lennard-Jones 6-12 potential       :       0       0      0   0.000   0.000      0.0000       1.000
+ 7 Coulomb point-point electrostatic p:       0       0      0   0.000   0.000      0.0000       1.000
+ 8 H-bonding potential                :       0       0      0   0.000   0.000      0.0000       1.000
+ 9 Distance restraints 1 (CA-CA)      :    1124       0      0   0.119   0.119      16.952       1.000
+10 Distance restraints 2 (N-O)        :    1343       0      2   0.168   0.168      35.814       1.000
+11 Mainchain Phi dihedral restraints  :       0       0      0   0.000   0.000      0.0000       1.000
+12 Mainchain Psi dihedral restraints  :       0       0      0   0.000   0.000      0.0000       1.000
+13 Mainchain Omega dihedral restraints:      79       0      0   3.543   3.543      11.692       1.000
+14 Sidechain Chi_1 dihedral restraints:      66       0      0  66.212  66.212      8.8497       1.000
+15 Sidechain Chi_2 dihedral restraints:      48       0      1  68.045  68.045      23.940       1.000
+16 Sidechain Chi_3 dihedral restraints:      21       0      0  76.051  76.051      18.499       1.000
+17 Sidechain Chi_4 dihedral restraints:       9       0      1 100.881 100.881      8.1801       1.000
+18 Disulfide distance restraints      :       5       0      0   0.002   0.002     0.27702E-02   1.000
+19 Disulfide angle restraints         :      10       0      0   1.233   1.233     0.33582       1.000
+20 Disulfide dihedral angle restraints:       5       0      0  13.121  13.121     0.98047       1.000
+21 Lower bound distance restraints    :       0       0      0   0.000   0.000      0.0000       1.000
+22 Upper bound distance restraints    :       0       0      0   0.000   0.000      0.0000       1.000
+23 Distance restraints 3 (SDCH-MNCH)  :     803       0      0   0.275   0.275      10.220       1.000
+24 Sidechain Chi_5 dihedral restraints:       0       0      0   0.000   0.000      0.0000       1.000
+25 Phi/Psi pair of dihedral restraints:      78       4     10  29.874  41.649      18.237       1.000
+26 Distance restraints 4 (SDCH-SDCH)  :     348       0      1   0.835   0.835      25.708       1.000
+27 Distance restraints 5 (X-Y)        :       0       0      0   0.000   0.000      0.0000       1.000
+28 NMR distance restraints 6 (X-Y)    :       0       0      0   0.000   0.000      0.0000       1.000
+29 NMR distance restraints 7 (X-Y)    :       0       0      0   0.000   0.000      0.0000       1.000
+30 Minimal distance restraints        :       0       0      0   0.000   0.000      0.0000       1.000
+31 Non-bonded restraints              :       0       0      0   0.000   0.000      0.0000       1.000
+32 Atomic accessibility restraints    :       0       0      0   0.000   0.000      0.0000       1.000
+33 Atomic density restraints          :       0       0      0   0.000   0.000      0.0000       1.000
+34 Absolute position restraints       :       0       0      0   0.000   0.000      0.0000       1.000
+35 Dihedral angle difference restraint:       0       0      0   0.000   0.000      0.0000       1.000
+36 GBSA implicit solvent potential    :       0       0      0   0.000   0.000      0.0000       1.000
+37 EM density fitting potential       :       0       0      0   0.000   0.000      0.0000       1.000
+38 SAXS restraints                    :       0       0      0   0.000   0.000      0.0000       1.000
+39 Symmetry restraints                :       0       0      0   0.000   0.000      0.0000       1.000
+
+
+
+# Heavy relative violation of each residue is written to: CgSCrotA1.V99990004
+# The profile is NOT normalized by the number of restraints.
+# The profiles are smoothed over a window of residues:    1
+# The sum of all numbers in the file:    6392.6611
+
+
+
+List of the violated restraints:
+   A restraint is violated when the relative difference
+   from the best value (RVIOL) is larger than CUTOFF.
+
+   ICSR   ... index of a restraint in the current set.
+   RESNO  ... residue numbers of the first two atoms.
+   ATM    ... IUPAC atom names of the first two atoms.
+   FEAT   ... the value of the feature in the model.
+   restr  ... the mean of the basis restraint with the smallest
+              difference from the model (local minimum).
+   viol   ... difference from the local minimum.
+   rviol  ... relative difference from the local minimum.
+   RESTR  ... the best value (global minimum).
+   VIOL   ... difference from the best value.
+   RVIOL  ... relative difference from the best value.
+
+
+-------------------------------------------------------------------------------------------------
+
+Feature 25                           : Phi/Psi pair of dihedral restraints     
+List of the RVIOL violations larger than   :       6.5000
+
+    #   ICSR  RESNO1/2 ATM1/2   INDATM1/2    FEAT   restr    viol   rviol   RESTR    VIOL   RVIOL
+    1   2174   3C   4Y C   N      21   23 -127.75  -63.50   72.83   10.80  -63.50   72.83   10.80
+    1          4Y   4Y N   CA     23   24   -9.11  -43.40                  -43.40
+    2   2202  31V  32T C   N     238  240  -49.26 -124.80   76.33    3.75  -63.20  175.17   23.39
+    2         32T  32T N   CA    240  241  132.52  143.50                  -42.10
+    3   2203  32T  33G C   N     245  247  108.64   82.20   44.74    1.24  -62.40  171.58   31.17
+    3         33G  33G N   CA    247  248  -27.59    8.50                  -41.20
+    4   2208  37K  38L C   N     279  281 -130.52 -108.50   84.47    4.75  -63.50  113.95   14.12
+    4         38L  38L N   CA    281  282   50.95  132.50                  -41.20
+
+
+report______> Distribution of short non-bonded contacts:
+
+
+DISTANCE1:  0.00 2.10 2.20 2.30 2.40 2.50 2.60 2.70 2.80 2.90 3.00 3.10 3.20 3.30 3.40
+DISTANCE2:  2.10 2.20 2.30 2.40 2.50 2.60 2.70 2.80 2.90 3.00 3.10 3.20 3.30 3.40 3.50
+FREQUENCY:     0    0    0    0    0    1   10   24   47   51   63   88   94  127   96
+
+
+<< end of ENERGY.
+iupac_m_397W> Atoms were not swapped because of the uncertainty of how to handle the H atom.
+>> Model assessment by DOPE-HR potential
+iatmcls_286W> MODEL atom not classified:  TYR:OXT  TYR
+
+
+>> ENERGY; Differences between the model's features and restraints:
+Number of all residues in MODEL                   :       80
+Number of all, selected real atoms                :      619     619
+Number of all, selected pseudo atoms              :        0       0
+Number of all static, selected restraints         :     6090    6090
+COVALENT_CYS                                      :        F
+NONBONDED_SEL_ATOMS                               :        1
+Number of non-bonded pairs (excluding 1-2,1-3,1-4):    77123
+Dynamic pairs routine                             : 1, NATM x NATM double loop
+Atomic shift for contacts update (UPDATE_DYNAMIC) :    0.390
+LENNARD_JONES_SWITCH                              :    6.500   7.500
+COULOMB_JONES_SWITCH                              :    6.500   7.500
+RESIDUE_SPAN_RANGE                                :        1    9999
+NLOGN_USE                                         :       15
+CONTACT_SHELL                                     :   15.000
+DYNAMIC_PAIRS,_SPHERE,_COULOMB,_LENNARD,_MODELLER :        T       F       F       F       T
+SPHERE_STDV                                       :    0.050
+RADII_FACTOR                                      :    0.820
+Current energy                                    :       -5063.9648
+
+
+
+
+<< end of ENERGY.
+DOPE-HR score               : -5063.964844
+>> Model assessment by GA341 potential
+
+Surface library          : /Users/ramsesrosales/opt/anaconda3/envs/Modeller_env/lib/modeller-10.2/modlib/surf5.de
+Pair library             : /Users/ramsesrosales/opt/anaconda3/envs/Modeller_env/lib/modeller-10.2/modlib/pair9.de
+Chain identifier         : _
+% sequence identity      :    57.500000
+Sequence length          :           80
+Compactness              :     0.345959
+Native energy (pair)     :  -105.660705
+Native energy (surface)  :    -1.476170
+Native energy (combined) :    -5.030602
+Z score (pair)           :    -5.460007
+Z score (surface)        :    -3.128331
+Z score (combined)       :    -5.771430
+GA341 score              :     1.000000
+
+
+
+>> ENERGY; Differences between the model's features and restraints:
+Number of all residues in MODEL                   :       80
+Number of all, selected real atoms                :      619     619
+Number of all, selected pseudo atoms              :        0       0
+Number of all static, selected restraints         :     6090    6090
+COVALENT_CYS                                      :        F
+NONBONDED_SEL_ATOMS                               :        1
+Number of non-bonded pairs (excluding 1-2,1-3,1-4):     1275
+Dynamic pairs routine                             : 2, NATM x NATM cell sorting
+Atomic shift for contacts update (UPDATE_DYNAMIC) :    0.390
+LENNARD_JONES_SWITCH                              :    6.500   7.500
+COULOMB_JONES_SWITCH                              :    6.500   7.500
+RESIDUE_SPAN_RANGE                                :        0   99999
+NLOGN_USE                                         :       15
+CONTACT_SHELL                                     :    4.000
+DYNAMIC_PAIRS,_SPHERE,_COULOMB,_LENNARD,_MODELLER :        T       T       F       F       F
+SPHERE_STDV                                       :    0.050
+RADII_FACTOR                                      :    0.820
+Current energy                                    :         351.2626
+
+
+
+
+
+Summary of the restraint violations: 
+
+   NUM     ... number of restraints.
+   NUMVI   ... number of restraints with RVIOL > VIOL_REPORT_CUT[i].
+   RVIOL   ... relative difference from the best value.
+   NUMVP   ... number of restraints with -Ln(pdf) > VIOL_REPORT_CUT2[i].
+   RMS_1   ... RMS(feature, minimally_violated_basis_restraint, NUMB).
+   RMS_2   ... RMS(feature, best_value, NUMB).
+   MOL.PDF ... scaled contribution to -Ln(Molecular pdf).
+
+ #                     RESTRAINT_GROUP      NUM   NUMVI  NUMVP   RMS_1   RMS_2         MOL.PDF     S_i
+------------------------------------------------------------------------------------------------------
+ 1 Bond length potential              :     632       0      0   0.004   0.004      3.5326       1.000
+ 2 Bond angle potential               :     851       0      1   1.803   1.803      54.632       1.000
+ 3 Stereochemical cosine torsion poten:     405       0      6  44.443  44.443      123.82       1.000
+ 4 Stereochemical improper torsion pot:     263       0      0   0.963   0.963      5.7081       1.000
+ 5 Soft-sphere overlap restraints     :    1275       0      0   0.002   0.002     0.87426       1.000
+ 6 Lennard-Jones 6-12 potential       :       0       0      0   0.000   0.000      0.0000       1.000
+ 7 Coulomb point-point electrostatic p:       0       0      0   0.000   0.000      0.0000       1.000
+ 8 H-bonding potential                :       0       0      0   0.000   0.000      0.0000       1.000
+ 9 Distance restraints 1 (CA-CA)      :    1124       0      0   0.129   0.129      18.033       1.000
+10 Distance restraints 2 (N-O)        :    1343       0      1   0.179   0.179      38.051       1.000
+11 Mainchain Phi dihedral restraints  :       0       0      0   0.000   0.000      0.0000       1.000
+12 Mainchain Psi dihedral restraints  :       0       0      0   0.000   0.000      0.0000       1.000
+13 Mainchain Omega dihedral restraints:      79       0      1   3.859   3.859      13.874       1.000
+14 Sidechain Chi_1 dihedral restraints:      66       0      0  66.905  66.905      13.352       1.000
+15 Sidechain Chi_2 dihedral restraints:      48       0      1  56.960  56.960      19.537       1.000
+16 Sidechain Chi_3 dihedral restraints:      21       0      0  75.321  75.321      15.082       1.000
+17 Sidechain Chi_4 dihedral restraints:       9       0      0  76.909  76.909      6.5298       1.000
+18 Disulfide distance restraints      :       5       0      0   0.005   0.005     0.21308E-01   1.000
+19 Disulfide angle restraints         :      10       0      0   1.005   1.005     0.22286       1.000
+20 Disulfide dihedral angle restraints:       5       0      0  14.959  14.959      1.2425       1.000
+21 Lower bound distance restraints    :       0       0      0   0.000   0.000      0.0000       1.000
+22 Upper bound distance restraints    :       0       0      0   0.000   0.000      0.0000       1.000
+23 Distance restraints 3 (SDCH-MNCH)  :     803       0      0   0.296   0.296      10.137       1.000
+24 Sidechain Chi_5 dihedral restraints:       0       0      0   0.000   0.000      0.0000       1.000
+25 Phi/Psi pair of dihedral restraints:      78       3      7  27.910  39.237      8.4551       1.000
+26 Distance restraints 4 (SDCH-SDCH)  :     348       0      0   0.619   0.619      18.163       1.000
+27 Distance restraints 5 (X-Y)        :       0       0      0   0.000   0.000      0.0000       1.000
+28 NMR distance restraints 6 (X-Y)    :       0       0      0   0.000   0.000      0.0000       1.000
+29 NMR distance restraints 7 (X-Y)    :       0       0      0   0.000   0.000      0.0000       1.000
+30 Minimal distance restraints        :       0       0      0   0.000   0.000      0.0000       1.000
+31 Non-bonded restraints              :       0       0      0   0.000   0.000      0.0000       1.000
+32 Atomic accessibility restraints    :       0       0      0   0.000   0.000      0.0000       1.000
+33 Atomic density restraints          :       0       0      0   0.000   0.000      0.0000       1.000
+34 Absolute position restraints       :       0       0      0   0.000   0.000      0.0000       1.000
+35 Dihedral angle difference restraint:       0       0      0   0.000   0.000      0.0000       1.000
+36 GBSA implicit solvent potential    :       0       0      0   0.000   0.000      0.0000       1.000
+37 EM density fitting potential       :       0       0      0   0.000   0.000      0.0000       1.000
+38 SAXS restraints                    :       0       0      0   0.000   0.000      0.0000       1.000
+39 Symmetry restraints                :       0       0      0   0.000   0.000      0.0000       1.000
+
+
+
+# Heavy relative violation of each residue is written to: CgSCrotA1.V99990005
+# The profile is NOT normalized by the number of restraints.
+# The profiles are smoothed over a window of residues:    1
+# The sum of all numbers in the file:    6170.8271
+
+
+
+List of the violated restraints:
+   A restraint is violated when the relative difference
+   from the best value (RVIOL) is larger than CUTOFF.
+
+   ICSR   ... index of a restraint in the current set.
+   RESNO  ... residue numbers of the first two atoms.
+   ATM    ... IUPAC atom names of the first two atoms.
+   FEAT   ... the value of the feature in the model.
+   restr  ... the mean of the basis restraint with the smallest
+              difference from the model (local minimum).
+   viol   ... difference from the local minimum.
+   rviol  ... relative difference from the local minimum.
+   RESTR  ... the best value (global minimum).
+   VIOL   ... difference from the best value.
+   RVIOL  ... relative difference from the best value.
+
+
+-------------------------------------------------------------------------------------------------
+
+Feature 25                           : Phi/Psi pair of dihedral restraints     
+List of the RVIOL violations larger than   :       6.5000
+
+    #   ICSR  RESNO1/2 ATM1/2   INDATM1/2    FEAT   restr    viol   rviol   RESTR    VIOL   RVIOL
+    1   2174   3C   4Y C   N      21   23 -126.81  -63.50   71.66   10.63  -63.50   71.66   10.63
+    1          4Y   4Y N   CA     23   24   -9.82  -43.40                  -43.40
+    2   2202  31V  32T C   N     238  240  -45.90 -124.80   79.44    3.97  -63.20  177.20   23.87
+    2         32T  32T N   CA    240  241  134.25  143.50                  -42.10
+    3   2203  32T  33G C   N     245  247  109.49   82.20   41.23    1.21  -62.40  172.91   31.58
+    3         33G  33G N   CA    247  248  -22.41    8.50                  -41.20
+
+
+report______> Distribution of short non-bonded contacts:
+
+
+DISTANCE1:  0.00 2.10 2.20 2.30 2.40 2.50 2.60 2.70 2.80 2.90 3.00 3.10 3.20 3.30 3.40
+DISTANCE2:  2.10 2.20 2.30 2.40 2.50 2.60 2.70 2.80 2.90 3.00 3.10 3.20 3.30 3.40 3.50
+FREQUENCY:     0    0    0    0    0    4    8   22   52   48   62   67  109  111  115
+
+
+<< end of ENERGY.
+iupac_m_397W> Atoms were not swapped because of the uncertainty of how to handle the H atom.
+iupac_m_397W> Atoms were not swapped because of the uncertainty of how to handle the H atom.
+iupac_m_397W> Atoms were not swapped because of the uncertainty of how to handle the H atom.
+>> Model assessment by DOPE-HR potential
+iatmcls_286W> MODEL atom not classified:  TYR:OXT  TYR
+
+
+>> ENERGY; Differences between the model's features and restraints:
+Number of all residues in MODEL                   :       80
+Number of all, selected real atoms                :      619     619
+Number of all, selected pseudo atoms              :        0       0
+Number of all static, selected restraints         :     6090    6090
+COVALENT_CYS                                      :        F
+NONBONDED_SEL_ATOMS                               :        1
+Number of non-bonded pairs (excluding 1-2,1-3,1-4):    77797
+Dynamic pairs routine                             : 1, NATM x NATM double loop
+Atomic shift for contacts update (UPDATE_DYNAMIC) :    0.390
+LENNARD_JONES_SWITCH                              :    6.500   7.500
+COULOMB_JONES_SWITCH                              :    6.500   7.500
+RESIDUE_SPAN_RANGE                                :        1    9999
+NLOGN_USE                                         :       15
+CONTACT_SHELL                                     :   15.000
+DYNAMIC_PAIRS,_SPHERE,_COULOMB,_LENNARD,_MODELLER :        T       F       F       F       T
+SPHERE_STDV                                       :    0.050
+RADII_FACTOR                                      :    0.820
+Current energy                                    :       -4652.3643
+
+
+
+
+<< end of ENERGY.
+DOPE-HR score               : -4652.364258
+>> Model assessment by GA341 potential
+
+Surface library          : /Users/ramsesrosales/opt/anaconda3/envs/Modeller_env/lib/modeller-10.2/modlib/surf5.de
+Pair library             : /Users/ramsesrosales/opt/anaconda3/envs/Modeller_env/lib/modeller-10.2/modlib/pair9.de
+Chain identifier         : _
+% sequence identity      :    57.500000
+Sequence length          :           80
+Compactness              :     0.345468
+Native energy (pair)     :   -86.514331
+Native energy (surface)  :    -0.862877
+Native energy (combined) :    -3.973015
+Z score (pair)           :    -4.832453
+Z score (surface)        :    -2.986791
+Z score (combined)       :    -5.408847
+GA341 score              :     1.000000
+
+
+
+>> ENERGY; Differences between the model's features and restraints:
+Number of all residues in MODEL                   :       80
+Number of all, selected real atoms                :      619     619
+Number of all, selected pseudo atoms              :        0       0
+Number of all static, selected restraints         :     6090    6090
+COVALENT_CYS                                      :        F
+NONBONDED_SEL_ATOMS                               :        1
+Number of non-bonded pairs (excluding 1-2,1-3,1-4):     1298
+Dynamic pairs routine                             : 2, NATM x NATM cell sorting
+Atomic shift for contacts update (UPDATE_DYNAMIC) :    0.390
+LENNARD_JONES_SWITCH                              :    6.500   7.500
+COULOMB_JONES_SWITCH                              :    6.500   7.500
+RESIDUE_SPAN_RANGE                                :        0   99999
+NLOGN_USE                                         :       15
+CONTACT_SHELL                                     :    4.000
+DYNAMIC_PAIRS,_SPHERE,_COULOMB,_LENNARD,_MODELLER :        T       T       F       F       F
+SPHERE_STDV                                       :    0.050
+RADII_FACTOR                                      :    0.820
+Current energy                                    :         381.3398
+
+
+
+
+
+Summary of the restraint violations: 
+
+   NUM     ... number of restraints.
+   NUMVI   ... number of restraints with RVIOL > VIOL_REPORT_CUT[i].
+   RVIOL   ... relative difference from the best value.
+   NUMVP   ... number of restraints with -Ln(pdf) > VIOL_REPORT_CUT2[i].
+   RMS_1   ... RMS(feature, minimally_violated_basis_restraint, NUMB).
+   RMS_2   ... RMS(feature, best_value, NUMB).
+   MOL.PDF ... scaled contribution to -Ln(Molecular pdf).
+
+ #                     RESTRAINT_GROUP      NUM   NUMVI  NUMVP   RMS_1   RMS_2         MOL.PDF     S_i
+------------------------------------------------------------------------------------------------------
+ 1 Bond length potential              :     632       0      0   0.005   0.005      4.8868       1.000
+ 2 Bond angle potential               :     851       0      2   1.994   1.994      65.983       1.000
+ 3 Stereochemical cosine torsion poten:     405       0      8  44.706  44.706      125.09       1.000
+ 4 Stereochemical improper torsion pot:     263       0      0   1.099   1.099      7.0675       1.000
+ 5 Soft-sphere overlap restraints     :    1298       0      0   0.001   0.001     0.30706       1.000
+ 6 Lennard-Jones 6-12 potential       :       0       0      0   0.000   0.000      0.0000       1.000
+ 7 Coulomb point-point electrostatic p:       0       0      0   0.000   0.000      0.0000       1.000
+ 8 H-bonding potential                :       0       0      0   0.000   0.000      0.0000       1.000
+ 9 Distance restraints 1 (CA-CA)      :    1124       0      0   0.128   0.128      19.268       1.000
+10 Distance restraints 2 (N-O)        :    1343       0      0   0.155   0.155      32.071       1.000
+11 Mainchain Phi dihedral restraints  :       0       0      0   0.000   0.000      0.0000       1.000
+12 Mainchain Psi dihedral restraints  :       0       0      0   0.000   0.000      0.0000       1.000
+13 Mainchain Omega dihedral restraints:      79       0      0   3.714   3.714      12.849       1.000
+14 Sidechain Chi_1 dihedral restraints:      66       0      1  59.226  59.226      15.342       1.000
+15 Sidechain Chi_2 dihedral restraints:      48       0      1  72.436  72.436      21.108       1.000
+16 Sidechain Chi_3 dihedral restraints:      21       0      0  77.071  77.071      15.273       1.000
+17 Sidechain Chi_4 dihedral restraints:       9       0      0 100.924 100.924      7.8268       1.000
+18 Disulfide distance restraints      :       5       0      0   0.008   0.008     0.60535E-01   1.000
+19 Disulfide angle restraints         :      10       0      0   2.897   2.897      1.8525       1.000
+20 Disulfide dihedral angle restraints:       5       0      0  15.344  15.344      1.3146       1.000
+21 Lower bound distance restraints    :       0       0      0   0.000   0.000      0.0000       1.000
+22 Upper bound distance restraints    :       0       0      0   0.000   0.000      0.0000       1.000
+23 Distance restraints 3 (SDCH-MNCH)  :     803       0      0   0.382   0.382      21.254       1.000
+24 Sidechain Chi_5 dihedral restraints:       0       0      0   0.000   0.000      0.0000       1.000
+25 Phi/Psi pair of dihedral restraints:      78       2      9  28.504  30.675      9.4857       1.000
+26 Distance restraints 4 (SDCH-SDCH)  :     348       0      0   0.681   0.681      20.299       1.000
+27 Distance restraints 5 (X-Y)        :       0       0      0   0.000   0.000      0.0000       1.000
+28 NMR distance restraints 6 (X-Y)    :       0       0      0   0.000   0.000      0.0000       1.000
+29 NMR distance restraints 7 (X-Y)    :       0       0      0   0.000   0.000      0.0000       1.000
+30 Minimal distance restraints        :       0       0      0   0.000   0.000      0.0000       1.000
+31 Non-bonded restraints              :       0       0      0   0.000   0.000      0.0000       1.000
+32 Atomic accessibility restraints    :       0       0      0   0.000   0.000      0.0000       1.000
+33 Atomic density restraints          :       0       0      0   0.000   0.000      0.0000       1.000
+34 Absolute position restraints       :       0       0      0   0.000   0.000      0.0000       1.000
+35 Dihedral angle difference restraint:       0       0      0   0.000   0.000      0.0000       1.000
+36 GBSA implicit solvent potential    :       0       0      0   0.000   0.000      0.0000       1.000
+37 EM density fitting potential       :       0       0      0   0.000   0.000      0.0000       1.000
+38 SAXS restraints                    :       0       0      0   0.000   0.000      0.0000       1.000
+39 Symmetry restraints                :       0       0      0   0.000   0.000      0.0000       1.000
+
+
+
+# Heavy relative violation of each residue is written to: CgSCrotA1.V99990006
+# The profile is NOT normalized by the number of restraints.
+# The profiles are smoothed over a window of residues:    1
+# The sum of all numbers in the file:    6020.3042
+
+
+
+List of the violated restraints:
+   A restraint is violated when the relative difference
+   from the best value (RVIOL) is larger than CUTOFF.
+
+   ICSR   ... index of a restraint in the current set.
+   RESNO  ... residue numbers of the first two atoms.
+   ATM    ... IUPAC atom names of the first two atoms.
+   FEAT   ... the value of the feature in the model.
+   restr  ... the mean of the basis restraint with the smallest
+              difference from the model (local minimum).
+   viol   ... difference from the local minimum.
+   rviol  ... relative difference from the local minimum.
+   RESTR  ... the best value (global minimum).
+   VIOL   ... difference from the best value.
+   RVIOL  ... relative difference from the best value.
+
+
+-------------------------------------------------------------------------------------------------
+
+Feature 25                           : Phi/Psi pair of dihedral restraints     
+List of the RVIOL violations larger than   :       6.5000
+
+    #   ICSR  RESNO1/2 ATM1/2   INDATM1/2    FEAT   restr    viol   rviol   RESTR    VIOL   RVIOL
+    1   2208  37K  38L C   N     279  281 -126.79 -108.50   96.27    5.37  -63.50  101.37   12.67
+    1         38L  38L N   CA    281  282   37.99  132.50                  -41.20
+    2   2246  75D  76N C   N     573  575  -93.37  -63.20   78.51    8.55  -63.20   78.51    8.55
+    2         76N  76N N   CA    575  576   31.38  -41.10                  -41.10
+
+
+report______> Distribution of short non-bonded contacts:
+
+
+DISTANCE1:  0.00 2.10 2.20 2.30 2.40 2.50 2.60 2.70 2.80 2.90 3.00 3.10 3.20 3.30 3.40
+DISTANCE2:  2.10 2.20 2.30 2.40 2.50 2.60 2.70 2.80 2.90 3.00 3.10 3.20 3.30 3.40 3.50
+FREQUENCY:     0    0    0    0    0    2    4   21   51   48   67   74  101  109  105
+
+
+<< end of ENERGY.
+iupac_m_397W> Atoms were not swapped because of the uncertainty of how to handle the H atom.
+iupac_m_397W> Atoms were not swapped because of the uncertainty of how to handle the H atom.
+>> Model assessment by DOPE-HR potential
+iatmcls_286W> MODEL atom not classified:  TYR:OXT  TYR
+
+
+>> ENERGY; Differences between the model's features and restraints:
+Number of all residues in MODEL                   :       80
+Number of all, selected real atoms                :      619     619
+Number of all, selected pseudo atoms              :        0       0
+Number of all static, selected restraints         :     6090    6090
+COVALENT_CYS                                      :        F
+NONBONDED_SEL_ATOMS                               :        1
+Number of non-bonded pairs (excluding 1-2,1-3,1-4):    77778
+Dynamic pairs routine                             : 1, NATM x NATM double loop
+Atomic shift for contacts update (UPDATE_DYNAMIC) :    0.390
+LENNARD_JONES_SWITCH                              :    6.500   7.500
+COULOMB_JONES_SWITCH                              :    6.500   7.500
+RESIDUE_SPAN_RANGE                                :        1    9999
+NLOGN_USE                                         :       15
+CONTACT_SHELL                                     :   15.000
+DYNAMIC_PAIRS,_SPHERE,_COULOMB,_LENNARD,_MODELLER :        T       F       F       F       T
+SPHERE_STDV                                       :    0.050
+RADII_FACTOR                                      :    0.820
+Current energy                                    :       -4635.7983
+
+
+
+
+<< end of ENERGY.
+DOPE-HR score               : -4635.798340
+>> Model assessment by GA341 potential
+
+Surface library          : /Users/ramsesrosales/opt/anaconda3/envs/Modeller_env/lib/modeller-10.2/modlib/surf5.de
+Pair library             : /Users/ramsesrosales/opt/anaconda3/envs/Modeller_env/lib/modeller-10.2/modlib/pair9.de
+Chain identifier         : _
+% sequence identity      :    57.500000
+Sequence length          :           80
+Compactness              :     0.336722
+Native energy (pair)     :  -111.663857
+Native energy (surface)  :    -1.363439
+Native energy (combined) :    -5.215512
+Z score (pair)           :    -5.656757
+Z score (surface)        :    -3.182235
+Z score (combined)       :    -6.062474
+GA341 score              :     1.000000
+
+
+
+>> ENERGY; Differences between the model's features and restraints:
+Number of all residues in MODEL                   :       80
+Number of all, selected real atoms                :      619     619
+Number of all, selected pseudo atoms              :        0       0
+Number of all static, selected restraints         :     6090    6090
+COVALENT_CYS                                      :        F
+NONBONDED_SEL_ATOMS                               :        1
+Number of non-bonded pairs (excluding 1-2,1-3,1-4):     1326
+Dynamic pairs routine                             : 2, NATM x NATM cell sorting
+Atomic shift for contacts update (UPDATE_DYNAMIC) :    0.390
+LENNARD_JONES_SWITCH                              :    6.500   7.500
+COULOMB_JONES_SWITCH                              :    6.500   7.500
+RESIDUE_SPAN_RANGE                                :        0   99999
+NLOGN_USE                                         :       15
+CONTACT_SHELL                                     :    4.000
+DYNAMIC_PAIRS,_SPHERE,_COULOMB,_LENNARD,_MODELLER :        T       T       F       F       F
+SPHERE_STDV                                       :    0.050
+RADII_FACTOR                                      :    0.820
+Current energy                                    :         371.9776
+
+
+
+
+
+Summary of the restraint violations: 
+
+   NUM     ... number of restraints.
+   NUMVI   ... number of restraints with RVIOL > VIOL_REPORT_CUT[i].
+   RVIOL   ... relative difference from the best value.
+   NUMVP   ... number of restraints with -Ln(pdf) > VIOL_REPORT_CUT2[i].
+   RMS_1   ... RMS(feature, minimally_violated_basis_restraint, NUMB).
+   RMS_2   ... RMS(feature, best_value, NUMB).
+   MOL.PDF ... scaled contribution to -Ln(Molecular pdf).
+
+ #                     RESTRAINT_GROUP      NUM   NUMVI  NUMVP   RMS_1   RMS_2         MOL.PDF     S_i
+------------------------------------------------------------------------------------------------------
+ 1 Bond length potential              :     632       0      0   0.005   0.005      3.9588       1.000
+ 2 Bond angle potential               :     851       0      2   1.909   1.909      61.410       1.000
+ 3 Stereochemical cosine torsion poten:     405       0      7  43.898  43.898      122.55       1.000
+ 4 Stereochemical improper torsion pot:     263       0      0   1.075   1.075      6.2071       1.000
+ 5 Soft-sphere overlap restraints     :    1326       0      0   0.002   0.002     0.49045       1.000
+ 6 Lennard-Jones 6-12 potential       :       0       0      0   0.000   0.000      0.0000       1.000
+ 7 Coulomb point-point electrostatic p:       0       0      0   0.000   0.000      0.0000       1.000
+ 8 H-bonding potential                :       0       0      0   0.000   0.000      0.0000       1.000
+ 9 Distance restraints 1 (CA-CA)      :    1124       0      0   0.110   0.110      15.426       1.000
+10 Distance restraints 2 (N-O)        :    1343       0      0   0.142   0.142      25.028       1.000
+11 Mainchain Phi dihedral restraints  :       0       0      0   0.000   0.000      0.0000       1.000
+12 Mainchain Psi dihedral restraints  :       0       0      0   0.000   0.000      0.0000       1.000
+13 Mainchain Omega dihedral restraints:      79       0      1   3.789   3.789      13.377       1.000
+14 Sidechain Chi_1 dihedral restraints:      66       0      0  67.732  67.732      18.572       1.000
+15 Sidechain Chi_2 dihedral restraints:      48       0      0  60.220  60.220      18.970       1.000
+16 Sidechain Chi_3 dihedral restraints:      21       0      0  69.598  69.598      15.313       1.000
+17 Sidechain Chi_4 dihedral restraints:       9       0      0 109.421 109.421      5.4426       1.000
+18 Disulfide distance restraints      :       5       0      0   0.002   0.002     0.46021E-02   1.000
+19 Disulfide angle restraints         :      10       0      0   2.466   2.466      1.3430       1.000
+20 Disulfide dihedral angle restraints:       5       0      0  14.543  14.543      1.2193       1.000
+21 Lower bound distance restraints    :       0       0      0   0.000   0.000      0.0000       1.000
+22 Upper bound distance restraints    :       0       0      0   0.000   0.000      0.0000       1.000
+23 Distance restraints 3 (SDCH-MNCH)  :     803       0      0   0.316   0.316      14.114       1.000
+24 Sidechain Chi_5 dihedral restraints:       0       0      0   0.000   0.000      0.0000       1.000
+25 Phi/Psi pair of dihedral restraints:      78       3      9  27.986  29.516      17.928       1.000
+26 Distance restraints 4 (SDCH-SDCH)  :     348       0      0   0.790   0.790      30.622       1.000
+27 Distance restraints 5 (X-Y)        :       0       0      0   0.000   0.000      0.0000       1.000
+28 NMR distance restraints 6 (X-Y)    :       0       0      0   0.000   0.000      0.0000       1.000
+29 NMR distance restraints 7 (X-Y)    :       0       0      0   0.000   0.000      0.0000       1.000
+30 Minimal distance restraints        :       0       0      0   0.000   0.000      0.0000       1.000
+31 Non-bonded restraints              :       0       0      0   0.000   0.000      0.0000       1.000
+32 Atomic accessibility restraints    :       0       0      0   0.000   0.000      0.0000       1.000
+33 Atomic density restraints          :       0       0      0   0.000   0.000      0.0000       1.000
+34 Absolute position restraints       :       0       0      0   0.000   0.000      0.0000       1.000
+35 Dihedral angle difference restraint:       0       0      0   0.000   0.000      0.0000       1.000
+36 GBSA implicit solvent potential    :       0       0      0   0.000   0.000      0.0000       1.000
+37 EM density fitting potential       :       0       0      0   0.000   0.000      0.0000       1.000
+38 SAXS restraints                    :       0       0      0   0.000   0.000      0.0000       1.000
+39 Symmetry restraints                :       0       0      0   0.000   0.000      0.0000       1.000
+
+
+
+# Heavy relative violation of each residue is written to: CgSCrotA1.V99990007
+# The profile is NOT normalized by the number of restraints.
+# The profiles are smoothed over a window of residues:    1
+# The sum of all numbers in the file:    5946.5215
+
+
+
+List of the violated restraints:
+   A restraint is violated when the relative difference
+   from the best value (RVIOL) is larger than CUTOFF.
+
+   ICSR   ... index of a restraint in the current set.
+   RESNO  ... residue numbers of the first two atoms.
+   ATM    ... IUPAC atom names of the first two atoms.
+   FEAT   ... the value of the feature in the model.
+   restr  ... the mean of the basis restraint with the smallest
+              difference from the model (local minimum).
+   viol   ... difference from the local minimum.
+   rviol  ... relative difference from the local minimum.
+   RESTR  ... the best value (global minimum).
+   VIOL   ... difference from the best value.
+   RVIOL  ... relative difference from the best value.
+
+
+-------------------------------------------------------------------------------------------------
+
+Feature 25                           : Phi/Psi pair of dihedral restraints     
+List of the RVIOL violations larger than   :       6.5000
+
+    #   ICSR  RESNO1/2 ATM1/2   INDATM1/2    FEAT   restr    viol   rviol   RESTR    VIOL   RVIOL
+    1   2174   3C   4Y C   N      21   23 -127.35  -63.50   71.49   10.67  -63.50   71.49   10.67
+    1          4Y   4Y N   CA     23   24  -11.24  -43.40                  -43.40
+    2   2201  30K  31V C   N     231  233  -78.81  -62.40   63.29    7.21  -62.40   63.29    7.21
+    2         31V  31V N   CA    233  234   18.72  -42.40                  -42.40
+    3   2246  75D  76N C   N     573  575  -94.87  -63.20   76.07    8.24  -63.20   76.07    8.24
+    3         76N  76N N   CA    575  576   28.07  -41.10                  -41.10
+
+
+report______> Distribution of short non-bonded contacts:
+
+
+DISTANCE1:  0.00 2.10 2.20 2.30 2.40 2.50 2.60 2.70 2.80 2.90 3.00 3.10 3.20 3.30 3.40
+DISTANCE2:  2.10 2.20 2.30 2.40 2.50 2.60 2.70 2.80 2.90 3.00 3.10 3.20 3.30 3.40 3.50
+FREQUENCY:     0    0    0    0    0    5    5   31   44   56   74   81  100  135   88
+
+
+<< end of ENERGY.
+>> Model assessment by DOPE-HR potential
+iatmcls_286W> MODEL atom not classified:  TYR:OXT  TYR
+
+
+>> ENERGY; Differences between the model's features and restraints:
+Number of all residues in MODEL                   :       80
+Number of all, selected real atoms                :      619     619
+Number of all, selected pseudo atoms              :        0       0
+Number of all static, selected restraints         :     6090    6090
+COVALENT_CYS                                      :        F
+NONBONDED_SEL_ATOMS                               :        1
+Number of non-bonded pairs (excluding 1-2,1-3,1-4):    76947
+Dynamic pairs routine                             : 1, NATM x NATM double loop
+Atomic shift for contacts update (UPDATE_DYNAMIC) :    0.390
+LENNARD_JONES_SWITCH                              :    6.500   7.500
+COULOMB_JONES_SWITCH                              :    6.500   7.500
+RESIDUE_SPAN_RANGE                                :        1    9999
+NLOGN_USE                                         :       15
+CONTACT_SHELL                                     :   15.000
+DYNAMIC_PAIRS,_SPHERE,_COULOMB,_LENNARD,_MODELLER :        T       F       F       F       T
+SPHERE_STDV                                       :    0.050
+RADII_FACTOR                                      :    0.820
+Current energy                                    :       -4724.0996
+
+
+
+
+<< end of ENERGY.
+DOPE-HR score               : -4724.099609
+>> Model assessment by GA341 potential
+
+Surface library          : /Users/ramsesrosales/opt/anaconda3/envs/Modeller_env/lib/modeller-10.2/modlib/surf5.de
+Pair library             : /Users/ramsesrosales/opt/anaconda3/envs/Modeller_env/lib/modeller-10.2/modlib/pair9.de
+Chain identifier         : _
+% sequence identity      :    57.500000
+Sequence length          :           80
+Compactness              :     0.344640
+Native energy (pair)     :   -98.865448
+Native energy (surface)  :    -1.675593
+Native energy (combined) :    -4.825655
+Z score (pair)           :    -5.342041
+Z score (surface)        :    -3.181272
+Z score (combined)       :    -5.775378
+GA341 score              :     1.000000
+
+
+
+>> ENERGY; Differences between the model's features and restraints:
+Number of all residues in MODEL                   :       80
+Number of all, selected real atoms                :      619     619
+Number of all, selected pseudo atoms              :        0       0
+Number of all static, selected restraints         :     6090    6090
+COVALENT_CYS                                      :        F
+NONBONDED_SEL_ATOMS                               :        1
+Number of non-bonded pairs (excluding 1-2,1-3,1-4):     1323
+Dynamic pairs routine                             : 2, NATM x NATM cell sorting
+Atomic shift for contacts update (UPDATE_DYNAMIC) :    0.390
+LENNARD_JONES_SWITCH                              :    6.500   7.500
+COULOMB_JONES_SWITCH                              :    6.500   7.500
+RESIDUE_SPAN_RANGE                                :        0   99999
+NLOGN_USE                                         :       15
+CONTACT_SHELL                                     :    4.000
+DYNAMIC_PAIRS,_SPHERE,_COULOMB,_LENNARD,_MODELLER :        T       T       F       F       F
+SPHERE_STDV                                       :    0.050
+RADII_FACTOR                                      :    0.820
+Current energy                                    :         321.2051
+
+
+
+
+
+Summary of the restraint violations: 
+
+   NUM     ... number of restraints.
+   NUMVI   ... number of restraints with RVIOL > VIOL_REPORT_CUT[i].
+   RVIOL   ... relative difference from the best value.
+   NUMVP   ... number of restraints with -Ln(pdf) > VIOL_REPORT_CUT2[i].
+   RMS_1   ... RMS(feature, minimally_violated_basis_restraint, NUMB).
+   RMS_2   ... RMS(feature, best_value, NUMB).
+   MOL.PDF ... scaled contribution to -Ln(Molecular pdf).
+
+ #                     RESTRAINT_GROUP      NUM   NUMVI  NUMVP   RMS_1   RMS_2         MOL.PDF     S_i
+------------------------------------------------------------------------------------------------------
+ 1 Bond length potential              :     632       0      0   0.004   0.004      3.3049       1.000
+ 2 Bond angle potential               :     851       0      2   1.712   1.712      49.809       1.000
+ 3 Stereochemical cosine torsion poten:     405       0      8  43.819  43.819      122.45       1.000
+ 4 Stereochemical improper torsion pot:     263       0      0   0.874   0.874      4.6497       1.000
+ 5 Soft-sphere overlap restraints     :    1323       0      0   0.002   0.002     0.94416       1.000
+ 6 Lennard-Jones 6-12 potential       :       0       0      0   0.000   0.000      0.0000       1.000
+ 7 Coulomb point-point electrostatic p:       0       0      0   0.000   0.000      0.0000       1.000
+ 8 H-bonding potential                :       0       0      0   0.000   0.000      0.0000       1.000
+ 9 Distance restraints 1 (CA-CA)      :    1124       0      0   0.116   0.116      15.304       1.000
+10 Distance restraints 2 (N-O)        :    1343       0      3   0.165   0.165      34.412       1.000
+11 Mainchain Phi dihedral restraints  :       0       0      0   0.000   0.000      0.0000       1.000
+12 Mainchain Psi dihedral restraints  :       0       0      0   0.000   0.000      0.0000       1.000
+13 Mainchain Omega dihedral restraints:      79       0      0   3.579   3.579      11.936       1.000
+14 Sidechain Chi_1 dihedral restraints:      66       0      0  68.306  68.306      10.015       1.000
+15 Sidechain Chi_2 dihedral restraints:      48       0      0  51.150  51.150      13.860       1.000
+16 Sidechain Chi_3 dihedral restraints:      21       0      0  82.318  82.318      15.856       1.000
+17 Sidechain Chi_4 dihedral restraints:       9       0      0 110.644 110.644      6.1251       1.000
+18 Disulfide distance restraints      :       5       0      0   0.003   0.003     0.61446E-02   1.000
+19 Disulfide angle restraints         :      10       0      0   1.062   1.062     0.24904       1.000
+20 Disulfide dihedral angle restraints:       5       0      0  15.322  15.322      1.2978       1.000
+21 Lower bound distance restraints    :       0       0      0   0.000   0.000      0.0000       1.000
+22 Upper bound distance restraints    :       0       0      0   0.000   0.000      0.0000       1.000
+23 Distance restraints 3 (SDCH-MNCH)  :     803       0      0   0.236   0.236      6.9621       1.000
+24 Sidechain Chi_5 dihedral restraints:       0       0      0   0.000   0.000      0.0000       1.000
+25 Phi/Psi pair of dihedral restraints:      78       3      9  28.549  39.461      11.848       1.000
+26 Distance restraints 4 (SDCH-SDCH)  :     348       0      0   0.509   0.509      12.175       1.000
+27 Distance restraints 5 (X-Y)        :       0       0      0   0.000   0.000      0.0000       1.000
+28 NMR distance restraints 6 (X-Y)    :       0       0      0   0.000   0.000      0.0000       1.000
+29 NMR distance restraints 7 (X-Y)    :       0       0      0   0.000   0.000      0.0000       1.000
+30 Minimal distance restraints        :       0       0      0   0.000   0.000      0.0000       1.000
+31 Non-bonded restraints              :       0       0      0   0.000   0.000      0.0000       1.000
+32 Atomic accessibility restraints    :       0       0      0   0.000   0.000      0.0000       1.000
+33 Atomic density restraints          :       0       0      0   0.000   0.000      0.0000       1.000
+34 Absolute position restraints       :       0       0      0   0.000   0.000      0.0000       1.000
+35 Dihedral angle difference restraint:       0       0      0   0.000   0.000      0.0000       1.000
+36 GBSA implicit solvent potential    :       0       0      0   0.000   0.000      0.0000       1.000
+37 EM density fitting potential       :       0       0      0   0.000   0.000      0.0000       1.000
+38 SAXS restraints                    :       0       0      0   0.000   0.000      0.0000       1.000
+39 Symmetry restraints                :       0       0      0   0.000   0.000      0.0000       1.000
+
+
+
+# Heavy relative violation of each residue is written to: CgSCrotA1.V99990008
+# The profile is NOT normalized by the number of restraints.
+# The profiles are smoothed over a window of residues:    1
+# The sum of all numbers in the file:    5853.6655
+
+
+
+List of the violated restraints:
+   A restraint is violated when the relative difference
+   from the best value (RVIOL) is larger than CUTOFF.
+
+   ICSR   ... index of a restraint in the current set.
+   RESNO  ... residue numbers of the first two atoms.
+   ATM    ... IUPAC atom names of the first two atoms.
+   FEAT   ... the value of the feature in the model.
+   restr  ... the mean of the basis restraint with the smallest
+              difference from the model (local minimum).
+   viol   ... difference from the local minimum.
+   rviol  ... relative difference from the local minimum.
+   RESTR  ... the best value (global minimum).
+   VIOL   ... difference from the best value.
+   RVIOL  ... relative difference from the best value.
+
+
+-------------------------------------------------------------------------------------------------
+
+Feature 25                           : Phi/Psi pair of dihedral restraints     
+List of the RVIOL violations larger than   :       6.5000
+
+    #   ICSR  RESNO1/2 ATM1/2   INDATM1/2    FEAT   restr    viol   rviol   RESTR    VIOL   RVIOL
+    1   2174   3C   4Y C   N      21   23 -127.06  -63.50   72.94   10.74  -63.50   72.94   10.74
+    1          4Y   4Y N   CA     23   24   -7.62  -43.40                  -43.40
+    2   2202  31V  32T C   N     238  240  -48.00 -124.80   77.71    3.80  -63.20  174.42   23.37
+    2         32T  32T N   CA    240  241  131.66  143.50                  -42.10
+    3   2203  32T  33G C   N     245  247  110.26   82.20   42.95    1.25  -62.40  173.51   31.63
+    3         33G  33G N   CA    247  248  -24.02    8.50                  -41.20
+
+
+report______> Distribution of short non-bonded contacts:
+
+
+DISTANCE1:  0.00 2.10 2.20 2.30 2.40 2.50 2.60 2.70 2.80 2.90 3.00 3.10 3.20 3.30 3.40
+DISTANCE2:  2.10 2.20 2.30 2.40 2.50 2.60 2.70 2.80 2.90 3.00 3.10 3.20 3.30 3.40 3.50
+FREQUENCY:     0    0    0    0    0    6   12   26   50   61   59   74  107  118  115
+
+
+<< end of ENERGY.
+iupac_m_397W> Atoms were not swapped because of the uncertainty of how to handle the H atom.
+iupac_m_397W> Atoms were not swapped because of the uncertainty of how to handle the H atom.
+iupac_m_397W> Atoms were not swapped because of the uncertainty of how to handle the H atom.
+>> Model assessment by DOPE-HR potential
+iatmcls_286W> MODEL atom not classified:  TYR:OXT  TYR
+
+
+>> ENERGY; Differences between the model's features and restraints:
+Number of all residues in MODEL                   :       80
+Number of all, selected real atoms                :      619     619
+Number of all, selected pseudo atoms              :        0       0
+Number of all static, selected restraints         :     6090    6090
+COVALENT_CYS                                      :        F
+NONBONDED_SEL_ATOMS                               :        1
+Number of non-bonded pairs (excluding 1-2,1-3,1-4):    75981
+Dynamic pairs routine                             : 1, NATM x NATM double loop
+Atomic shift for contacts update (UPDATE_DYNAMIC) :    0.390
+LENNARD_JONES_SWITCH                              :    6.500   7.500
+COULOMB_JONES_SWITCH                              :    6.500   7.500
+RESIDUE_SPAN_RANGE                                :        1    9999
+NLOGN_USE                                         :       15
+CONTACT_SHELL                                     :   15.000
+DYNAMIC_PAIRS,_SPHERE,_COULOMB,_LENNARD,_MODELLER :        T       F       F       F       T
+SPHERE_STDV                                       :    0.050
+RADII_FACTOR                                      :    0.820
+Current energy                                    :       -4773.6074
+
+
+
+
+<< end of ENERGY.
+DOPE-HR score               : -4773.607422
+>> Model assessment by GA341 potential
+
+Surface library          : /Users/ramsesrosales/opt/anaconda3/envs/Modeller_env/lib/modeller-10.2/modlib/surf5.de
+Pair library             : /Users/ramsesrosales/opt/anaconda3/envs/Modeller_env/lib/modeller-10.2/modlib/pair9.de
+Chain identifier         : _
+% sequence identity      :    57.500000
+Sequence length          :           80
+Compactness              :     0.342462
+Native energy (pair)     :  -100.193803
+Native energy (surface)  :    -2.072646
+Native energy (combined) :    -5.052025
+Z score (pair)           :    -5.485995
+Z score (surface)        :    -3.347329
+Z score (combined)       :    -5.992871
+GA341 score              :     1.000000
+
+
+
+>> ENERGY; Differences between the model's features and restraints:
+Number of all residues in MODEL                   :       80
+Number of all, selected real atoms                :      619     619
+Number of all, selected pseudo atoms              :        0       0
+Number of all static, selected restraints         :     6090    6090
+COVALENT_CYS                                      :        F
+NONBONDED_SEL_ATOMS                               :        1
+Number of non-bonded pairs (excluding 1-2,1-3,1-4):     1249
+Dynamic pairs routine                             : 2, NATM x NATM cell sorting
+Atomic shift for contacts update (UPDATE_DYNAMIC) :    0.390
+LENNARD_JONES_SWITCH                              :    6.500   7.500
+COULOMB_JONES_SWITCH                              :    6.500   7.500
+RESIDUE_SPAN_RANGE                                :        0   99999
+NLOGN_USE                                         :       15
+CONTACT_SHELL                                     :    4.000
+DYNAMIC_PAIRS,_SPHERE,_COULOMB,_LENNARD,_MODELLER :        T       T       F       F       F
+SPHERE_STDV                                       :    0.050
+RADII_FACTOR                                      :    0.820
+Current energy                                    :         406.4466
+
+
+
+
+
+Summary of the restraint violations: 
+
+   NUM     ... number of restraints.
+   NUMVI   ... number of restraints with RVIOL > VIOL_REPORT_CUT[i].
+   RVIOL   ... relative difference from the best value.
+   NUMVP   ... number of restraints with -Ln(pdf) > VIOL_REPORT_CUT2[i].
+   RMS_1   ... RMS(feature, minimally_violated_basis_restraint, NUMB).
+   RMS_2   ... RMS(feature, best_value, NUMB).
+   MOL.PDF ... scaled contribution to -Ln(Molecular pdf).
+
+ #                     RESTRAINT_GROUP      NUM   NUMVI  NUMVP   RMS_1   RMS_2         MOL.PDF     S_i
+------------------------------------------------------------------------------------------------------
+ 1 Bond length potential              :     632       0      0   0.005   0.005      4.6238       1.000
+ 2 Bond angle potential               :     851       0      3   1.962   1.962      62.983       1.000
+ 3 Stereochemical cosine torsion poten:     405       0      9  43.490  43.490      123.55       1.000
+ 4 Stereochemical improper torsion pot:     263       0      0   1.038   1.038      6.1266       1.000
+ 5 Soft-sphere overlap restraints     :    1249       0      0   0.003   0.003      1.0898       1.000
+ 6 Lennard-Jones 6-12 potential       :       0       0      0   0.000   0.000      0.0000       1.000
+ 7 Coulomb point-point electrostatic p:       0       0      0   0.000   0.000      0.0000       1.000
+ 8 H-bonding potential                :       0       0      0   0.000   0.000      0.0000       1.000
+ 9 Distance restraints 1 (CA-CA)      :    1124       0      0   0.142   0.142      23.892       1.000
+10 Distance restraints 2 (N-O)        :    1343       0      1   0.178   0.178      38.864       1.000
+11 Mainchain Phi dihedral restraints  :       0       0      0   0.000   0.000      0.0000       1.000
+12 Mainchain Psi dihedral restraints  :       0       0      0   0.000   0.000      0.0000       1.000
+13 Mainchain Omega dihedral restraints:      79       0      0   3.789   3.789      13.374       1.000
+14 Sidechain Chi_1 dihedral restraints:      66       0      0  70.556  70.556      19.082       1.000
+15 Sidechain Chi_2 dihedral restraints:      48       0      0  69.879  69.879      21.615       1.000
+16 Sidechain Chi_3 dihedral restraints:      21       0      0  79.146  79.146      14.910       1.000
+17 Sidechain Chi_4 dihedral restraints:       9       0      0  84.455  84.455      6.3065       1.000
+18 Disulfide distance restraints      :       5       0      0   0.003   0.003     0.70725E-02   1.000
+19 Disulfide angle restraints         :      10       0      0   1.910   1.910     0.80546       1.000
+20 Disulfide dihedral angle restraints:       5       0      0  14.367  14.367      1.1884       1.000
+21 Lower bound distance restraints    :       0       0      0   0.000   0.000      0.0000       1.000
+22 Upper bound distance restraints    :       0       0      0   0.000   0.000      0.0000       1.000
+23 Distance restraints 3 (SDCH-MNCH)  :     803       0      0   0.400   0.400      23.625       1.000
+24 Sidechain Chi_5 dihedral restraints:       0       0      0   0.000   0.000      0.0000       1.000
+25 Phi/Psi pair of dihedral restraints:      78       3      8  27.711  38.971      12.929       1.000
+26 Distance restraints 4 (SDCH-SDCH)  :     348       0      0   0.721   0.721      31.473       1.000
+27 Distance restraints 5 (X-Y)        :       0       0      0   0.000   0.000      0.0000       1.000
+28 NMR distance restraints 6 (X-Y)    :       0       0      0   0.000   0.000      0.0000       1.000
+29 NMR distance restraints 7 (X-Y)    :       0       0      0   0.000   0.000      0.0000       1.000
+30 Minimal distance restraints        :       0       0      0   0.000   0.000      0.0000       1.000
+31 Non-bonded restraints              :       0       0      0   0.000   0.000      0.0000       1.000
+32 Atomic accessibility restraints    :       0       0      0   0.000   0.000      0.0000       1.000
+33 Atomic density restraints          :       0       0      0   0.000   0.000      0.0000       1.000
+34 Absolute position restraints       :       0       0      0   0.000   0.000      0.0000       1.000
+35 Dihedral angle difference restraint:       0       0      0   0.000   0.000      0.0000       1.000
+36 GBSA implicit solvent potential    :       0       0      0   0.000   0.000      0.0000       1.000
+37 EM density fitting potential       :       0       0      0   0.000   0.000      0.0000       1.000
+38 SAXS restraints                    :       0       0      0   0.000   0.000      0.0000       1.000
+39 Symmetry restraints                :       0       0      0   0.000   0.000      0.0000       1.000
+
+
+
+# Heavy relative violation of each residue is written to: CgSCrotA1.V99990009
+# The profile is NOT normalized by the number of restraints.
+# The profiles are smoothed over a window of residues:    1
+# The sum of all numbers in the file:    6630.0654
+
+
+
+List of the violated restraints:
+   A restraint is violated when the relative difference
+   from the best value (RVIOL) is larger than CUTOFF.
+
+   ICSR   ... index of a restraint in the current set.
+   RESNO  ... residue numbers of the first two atoms.
+   ATM    ... IUPAC atom names of the first two atoms.
+   FEAT   ... the value of the feature in the model.
+   restr  ... the mean of the basis restraint with the smallest
+              difference from the model (local minimum).
+   viol   ... difference from the local minimum.
+   rviol  ... relative difference from the local minimum.
+   RESTR  ... the best value (global minimum).
+   VIOL   ... difference from the best value.
+   RVIOL  ... relative difference from the best value.
+
+
+-------------------------------------------------------------------------------------------------
+
+Feature 25                           : Phi/Psi pair of dihedral restraints     
+List of the RVIOL violations larger than   :       6.5000
+
+    #   ICSR  RESNO1/2 ATM1/2   INDATM1/2    FEAT   restr    viol   rviol   RESTR    VIOL   RVIOL
+    1   2174   3C   4Y C   N      21   23 -126.58  -63.50   69.88   10.50  -63.50   69.88   10.50
+    1          4Y   4Y N   CA     23   24  -13.32  -43.40                  -43.40
+    2   2202  31V  32T C   N     238  240  -48.69 -124.80   77.15    3.75  -63.20  173.60   23.22
+    2         32T  32T N   CA    240  241  130.89  143.50                  -42.10
+    3   2203  32T  33G C   N     245  247  110.06   82.20   42.23    1.24  -62.40  173.40   31.64
+    3         33G  33G N   CA    247  248  -23.24    8.50                  -41.20
+
+
+report______> Distribution of short non-bonded contacts:
+
+
+DISTANCE1:  0.00 2.10 2.20 2.30 2.40 2.50 2.60 2.70 2.80 2.90 3.00 3.10 3.20 3.30 3.40
+DISTANCE2:  2.10 2.20 2.30 2.40 2.50 2.60 2.70 2.80 2.90 3.00 3.10 3.20 3.30 3.40 3.50
+FREQUENCY:     0    0    0    0    0    2    8   18   43   53   56   78  105  109  100
+
+
+<< end of ENERGY.
+>> Model assessment by DOPE-HR potential
+iatmcls_286W> MODEL atom not classified:  TYR:OXT  TYR
+
+
+>> ENERGY; Differences between the model's features and restraints:
+Number of all residues in MODEL                   :       80
+Number of all, selected real atoms                :      619     619
+Number of all, selected pseudo atoms              :        0       0
+Number of all static, selected restraints         :     6090    6090
+COVALENT_CYS                                      :        F
+NONBONDED_SEL_ATOMS                               :        1
+Number of non-bonded pairs (excluding 1-2,1-3,1-4):    76941
+Dynamic pairs routine                             : 1, NATM x NATM double loop
+Atomic shift for contacts update (UPDATE_DYNAMIC) :    0.390
+LENNARD_JONES_SWITCH                              :    6.500   7.500
+COULOMB_JONES_SWITCH                              :    6.500   7.500
+RESIDUE_SPAN_RANGE                                :        1    9999
+NLOGN_USE                                         :       15
+CONTACT_SHELL                                     :   15.000
+DYNAMIC_PAIRS,_SPHERE,_COULOMB,_LENNARD,_MODELLER :        T       F       F       F       T
+SPHERE_STDV                                       :    0.050
+RADII_FACTOR                                      :    0.820
+Current energy                                    :       -4859.3896
+
+
+
+
+<< end of ENERGY.
+DOPE-HR score               : -4859.389648
+>> Model assessment by GA341 potential
+
+Surface library          : /Users/ramsesrosales/opt/anaconda3/envs/Modeller_env/lib/modeller-10.2/modlib/surf5.de
+Pair library             : /Users/ramsesrosales/opt/anaconda3/envs/Modeller_env/lib/modeller-10.2/modlib/pair9.de
+Chain identifier         : _
+% sequence identity      :    57.500000
+Sequence length          :           80
+Compactness              :     0.342795
+Native energy (pair)     :  -109.770248
+Native energy (surface)  :    -0.903344
+Native energy (combined) :    -4.881032
+Z score (pair)           :    -5.456130
+Z score (surface)        :    -2.940900
+Z score (combined)       :    -5.760189
+GA341 score              :     1.000000
+
+
+
+>> ENERGY; Differences between the model's features and restraints:
+Number of all residues in MODEL                   :       80
+Number of all, selected real atoms                :      619     619
+Number of all, selected pseudo atoms              :        0       0
+Number of all static, selected restraints         :     6090    6090
+COVALENT_CYS                                      :        F
+NONBONDED_SEL_ATOMS                               :        1
+Number of non-bonded pairs (excluding 1-2,1-3,1-4):     1265
+Dynamic pairs routine                             : 2, NATM x NATM cell sorting
+Atomic shift for contacts update (UPDATE_DYNAMIC) :    0.390
+LENNARD_JONES_SWITCH                              :    6.500   7.500
+COULOMB_JONES_SWITCH                              :    6.500   7.500
+RESIDUE_SPAN_RANGE                                :        0   99999
+NLOGN_USE                                         :       15
+CONTACT_SHELL                                     :    4.000
+DYNAMIC_PAIRS,_SPHERE,_COULOMB,_LENNARD,_MODELLER :        T       T       F       F       F
+SPHERE_STDV                                       :    0.050
+RADII_FACTOR                                      :    0.820
+Current energy                                    :         308.6651
+
+
+
+
+
+Summary of the restraint violations: 
+
+   NUM     ... number of restraints.
+   NUMVI   ... number of restraints with RVIOL > VIOL_REPORT_CUT[i].
+   RVIOL   ... relative difference from the best value.
+   NUMVP   ... number of restraints with -Ln(pdf) > VIOL_REPORT_CUT2[i].
+   RMS_1   ... RMS(feature, minimally_violated_basis_restraint, NUMB).
+   RMS_2   ... RMS(feature, best_value, NUMB).
+   MOL.PDF ... scaled contribution to -Ln(Molecular pdf).
+
+ #                     RESTRAINT_GROUP      NUM   NUMVI  NUMVP   RMS_1   RMS_2         MOL.PDF     S_i
+------------------------------------------------------------------------------------------------------
+ 1 Bond length potential              :     632       0      0   0.005   0.005      4.0001       1.000
+ 2 Bond angle potential               :     851       0      2   1.779   1.779      54.413       1.000
+ 3 Stereochemical cosine torsion poten:     405       0      7  43.733  43.733      122.29       1.000
+ 4 Stereochemical improper torsion pot:     263       0      0   0.939   0.939      4.9459       1.000
+ 5 Soft-sphere overlap restraints     :    1265       0      0   0.001   0.001     0.32219       1.000
+ 6 Lennard-Jones 6-12 potential       :       0       0      0   0.000   0.000      0.0000       1.000
+ 7 Coulomb point-point electrostatic p:       0       0      0   0.000   0.000      0.0000       1.000
+ 8 H-bonding potential                :       0       0      0   0.000   0.000      0.0000       1.000
+ 9 Distance restraints 1 (CA-CA)      :    1124       0      0   0.103   0.103      12.026       1.000
+10 Distance restraints 2 (N-O)        :    1343       0      0   0.127   0.127      22.731       1.000
+11 Mainchain Phi dihedral restraints  :       0       0      0   0.000   0.000      0.0000       1.000
+12 Mainchain Psi dihedral restraints  :       0       0      0   0.000   0.000      0.0000       1.000
+13 Mainchain Omega dihedral restraints:      79       0      0   3.730   3.730      12.961       1.000
+14 Sidechain Chi_1 dihedral restraints:      66       0      1  64.584  64.584      11.526       1.000
+15 Sidechain Chi_2 dihedral restraints:      48       0      1  50.118  50.118      13.782       1.000
+16 Sidechain Chi_3 dihedral restraints:      21       0      0  77.695  77.695      14.595       1.000
+17 Sidechain Chi_4 dihedral restraints:       9       0      0  69.584  69.584      5.8466       1.000
+18 Disulfide distance restraints      :       5       0      0   0.004   0.004     0.11942E-01   1.000
+19 Disulfide angle restraints         :      10       0      0   2.482   2.482      1.3601       1.000
+20 Disulfide dihedral angle restraints:       5       0      0  13.889  13.889      1.1158       1.000
+21 Lower bound distance restraints    :       0       0      0   0.000   0.000      0.0000       1.000
+22 Upper bound distance restraints    :       0       0      0   0.000   0.000      0.0000       1.000
+23 Distance restraints 3 (SDCH-MNCH)  :     803       0      0   0.236   0.236      6.9322       1.000
+24 Sidechain Chi_5 dihedral restraints:       0       0      0   0.000   0.000      0.0000       1.000
+25 Phi/Psi pair of dihedral restraints:      78       2      8  26.696  28.228      12.524       1.000
+26 Distance restraints 4 (SDCH-SDCH)  :     348       0      0   0.398   0.398      7.2850       1.000
+27 Distance restraints 5 (X-Y)        :       0       0      0   0.000   0.000      0.0000       1.000
+28 NMR distance restraints 6 (X-Y)    :       0       0      0   0.000   0.000      0.0000       1.000
+29 NMR distance restraints 7 (X-Y)    :       0       0      0   0.000   0.000      0.0000       1.000
+30 Minimal distance restraints        :       0       0      0   0.000   0.000      0.0000       1.000
+31 Non-bonded restraints              :       0       0      0   0.000   0.000      0.0000       1.000
+32 Atomic accessibility restraints    :       0       0      0   0.000   0.000      0.0000       1.000
+33 Atomic density restraints          :       0       0      0   0.000   0.000      0.0000       1.000
+34 Absolute position restraints       :       0       0      0   0.000   0.000      0.0000       1.000
+35 Dihedral angle difference restraint:       0       0      0   0.000   0.000      0.0000       1.000
+36 GBSA implicit solvent potential    :       0       0      0   0.000   0.000      0.0000       1.000
+37 EM density fitting potential       :       0       0      0   0.000   0.000      0.0000       1.000
+38 SAXS restraints                    :       0       0      0   0.000   0.000      0.0000       1.000
+39 Symmetry restraints                :       0       0      0   0.000   0.000      0.0000       1.000
+
+
+
+# Heavy relative violation of each residue is written to: CgSCrotA1.V99990010
+# The profile is NOT normalized by the number of restraints.
+# The profiles are smoothed over a window of residues:    1
+# The sum of all numbers in the file:    5203.7500
+
+
+
+List of the violated restraints:
+   A restraint is violated when the relative difference
+   from the best value (RVIOL) is larger than CUTOFF.
+
+   ICSR   ... index of a restraint in the current set.
+   RESNO  ... residue numbers of the first two atoms.
+   ATM    ... IUPAC atom names of the first two atoms.
+   FEAT   ... the value of the feature in the model.
+   restr  ... the mean of the basis restraint with the smallest
+              difference from the model (local minimum).
+   viol   ... difference from the local minimum.
+   rviol  ... relative difference from the local minimum.
+   RESTR  ... the best value (global minimum).
+   VIOL   ... difference from the best value.
+   RVIOL  ... relative difference from the best value.
+
+
+-------------------------------------------------------------------------------------------------
+
+Feature 25                           : Phi/Psi pair of dihedral restraints     
+List of the RVIOL violations larger than   :       6.5000
+
+    #   ICSR  RESNO1/2 ATM1/2   INDATM1/2    FEAT   restr    viol   rviol   RESTR    VIOL   RVIOL
+    1   2174   3C   4Y C   N      21   23 -127.56  -63.50   71.88   10.72  -63.50   71.88   10.72
+    1          4Y   4Y N   CA     23   24  -10.80  -43.40                  -43.40
+    2   2201  30K  31V C   N     231  233  -80.02  -62.40   66.34    7.54  -62.40   66.34    7.54
+    2         31V  31V N   CA    233  234   21.56  -42.40                  -42.40
+
+
+report______> Distribution of short non-bonded contacts:
+
+
+DISTANCE1:  0.00 2.10 2.20 2.30 2.40 2.50 2.60 2.70 2.80 2.90 3.00 3.10 3.20 3.30 3.40
+DISTANCE2:  2.10 2.20 2.30 2.40 2.50 2.60 2.70 2.80 2.90 3.00 3.10 3.20 3.30 3.40 3.50
+FREQUENCY:     0    0    0    0    0    8    6   25   48   54   61   71   93  127   92
+
+
+<< end of ENERGY.
+
+>> Summary of successfully produced models:
+Filename                          molpdf  DOPE-HR score    GA341 score
+----------------------------------------------------------------------
+CgSCrotA1.B99990001.pdb        340.81082    -4832.02637        1.00000
+CgSCrotA1.B99990002.pdb        326.92398    -4585.90625        1.00000
+CgSCrotA1.B99990003.pdb        393.55963    -4829.72363        1.00000
+CgSCrotA1.B99990004.pdb        369.56259    -4960.07812        1.00000
+CgSCrotA1.B99990005.pdb        351.26263    -5063.96484        1.00000
+CgSCrotA1.B99990006.pdb        381.33975    -4652.36426        1.00000
+CgSCrotA1.B99990007.pdb        371.97760    -4635.79834        1.00000
+CgSCrotA1.B99990008.pdb        321.20514    -4724.09961        1.00000
+CgSCrotA1.B99990009.pdb        406.44659    -4773.60742        1.00000
+CgSCrotA1.B99990010.pdb        308.66507    -4859.38965        1.00000
+

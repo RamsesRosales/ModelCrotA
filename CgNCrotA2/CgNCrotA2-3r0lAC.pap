@@ -1,0 +1,9 @@
+ _aln.pos          10        20        30        40        50        60
+3r0lAC     GCYCGAGGQGWPQDASDRCCFEHDCCYAKLTGC/G------E----IVCGEDDPCGTQICECDKAAA 
+CgNCrotA2  GCYCGAGGQGRPQDASDRCCFVHDCCYGKVTDC-DPKKDVSEENGAIVCGGDDPCKKQVCECDKDAA 
+ _consrvd  ********** ********** ***** * * *        *    **** ****  * ***** **
+
+ _aln.pos   70        80
+3r0lAC     ICFRNSMDT/NCQQPC 
+CgNCrotA2  ICFRDNKDT-Y----- 
+ _consrvd  ****   **
