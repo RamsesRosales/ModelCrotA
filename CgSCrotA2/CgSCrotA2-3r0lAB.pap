@@ -1,9 +1,9 @@
  _aln.pos          10        20        30        40        50        60
-3r0lAB     -GCYCGAGGQGWPQDASDRCCFEHDCCYAKLTGC/G-------EIVCGEDDPCGTQICECDKAAAIC 
-CgSCrotA2  YGCYCGAGGQGWPQDASDRCCFEHDCCYRKVTGC/DPKLEENGDMICGGDDPCEKQICECDKAAAIC 
- _consrvd   *************************** * ***            ** ****  ************
+3r0lAB     GCYCGAGGQGWPQDASDRCCFEHDCCYAKLTGC/G---------EIVCGEDDPCGTQICECDKAAAI 
+CgSCrotA2  GCYCGAGGQGWPQDASDRCCFEHDCCYRKVTGC-DPKLDVEENGDMICGGDDPCEKQICECDKAAAI 
+ _consrvd  *************************** * ***              ** ****  ***********
 
  _aln.pos   70
-3r0lAB     FRNSMDT- 
-CgSCrotA2  FRDNKDTY 
- _consrvd  **   **
+3r0lAB     CFRNSMDT 
+CgSCrotA2  CFRDNKDT 
+ _consrvd  ***   **
