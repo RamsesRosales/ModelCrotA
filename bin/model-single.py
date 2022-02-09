@@ -1,4 +1,4 @@
-#!/bin/env  python
+#!/Users/ramsesrosales/opt/anaconda3/envs/modeller_env/bin/python
 
 import argparse
 

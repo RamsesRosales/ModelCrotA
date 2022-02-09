@@ -10,5 +10,6 @@ echo
 echo %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 tail -n+2 $1 > tmp 
-echo "#\!"$(which $2) > $1
+echo "#!"$(which $2) > $1
 cat tmp >> $1
+rm tmp
