@@ -19,7 +19,7 @@ output:
     toc_float: yes
 ---
 
-Models were made following modeller basic tutorial using especifications from Wintingtton et al.
+Models were made following modeller basic tutorial using especifications from [Whittington et al. (2018)](https://academic.oup.com/mbe/article/35/4/887/4797214)
 
 # Crotoxin-like Subunit
 
@@ -38,7 +38,13 @@ The general pipeline is two python scripts taken from the modeller basic tutoria
 ls bin
 ```
 
-I used parallel to make several model at onece
+I used parallel to make several models at once when the chanin of the reference was the same (CgCrotB, CgSCrotA, CgNCrotB). 
+
+the script should be run as follow
+
+- Align2d.py -a < target_sequence.ali > -p < reference.pdf > -c < pdb chain >
+- model-sigle.py -a <aligned_target2refence.ali > -k < reference + chain > -s < target name  > model-single
+
 
 ```{bash, eval=FALSE}
 parallel -a list -j 2 --verbose " echo {}
@@ -51,33 +57,44 @@ python ../bin/model-single.py -a {}-3r0lD.ali -k 3r0lD -s {} > model-single.log
 rm 3r0l.pdb"
 ```
 
-## CgCrotB
+## Crotoxin-like Basic Subunit
 
-Beta subunit modeled with D chain of the crotoxin pdb corresponding to the B subunit
+### CgCrotB
+
+Beta subunit modeled with D chain of the crotoxin pdb corresponding to the B subunit.
 
 ## Crotoxin-like Acidic Subunit
 
 #### CgSCrotA 
 
-Alfa subunit from the south population without cleavage modeled with D chain of the crotoxin pdb corresponding to the B subunit
+![3d model](pictures/CgSCrotA.gif)
 
-#### CgNCrotA
+Alfa subunit from the south population without cleavage modeled with D chain of the crotoxin pdb corresponding to the B subunit. The results from this run were used as input for [GetArea](https://curie.utmb.edu/getarea.html) server to calculate the Solvent Accesible Surface Area (SASA). The file used was CgSCrotA.B99990004.pdb, as it has the lowest DOPE-HR score, following [Whittington et al. (2018)](https://academic.oup.com/mbe/article/35/4/887/4797214)
 
-Alfa subunit from the North population without cleavage modeled with D chain of the crotoxin pdb corresponding to the B subunit
+```{bash}
+tail -n 13 CgSCrotA/model-single.log
+```
 
 #### CgSCrotA1
 
-Alfa subunit from the South population with cleavage on sites 1,4,5 modeled with D chain of the crotoxin pdb corresponding to the B subunit
-
-#### CgNCrotA1
-
-Alfa subunit from the North population with cleavage on sites 1,4,5 modeled with D chain of the crotoxin pdb corresponding to the B subunit
+Alfa subunit from the South population with cleavage on sites 1,4,5 modeled with D chain of the crotoxin pdb corresponding to the B subunit.
 
 #### CgSCrotA2
 
-Alfa subunit from the South population with cleavage on sites 1,4,5 and 2,3 modeled with A,B,D chains of the crotoxin pdb corresponding to the A subunit
+Alfa subunit from the South population with cleavage on sites 1,4,5 and 2,3 modeled with A,B,D chains of the crotoxin pdb corresponding to the A subunit.
+
+## gA1 PLA2 similar to the Acidic Subunit
+
+
+#### CgNCrotA
+
+Alfa subunit from the North population without cleavage modeled with D chain of the crotoxin pdb corresponding to the B subunit.
+
+#### CgNCrotA1
+
+Alfa subunit from the North population with cleavage on sites 1,4,5 modeled with D chain of the crotoxin pdb corresponding to the B subunit.
 
 #### CgNCrotA2
 
-Alfa subunit from the South population with cleavage on sites 1,4,5, and 2,3 modeled with A,B,D chains of the crotoxin pdb corresponding to the A subunit
+Alfa subunit from the South population with cleavage on sites 1,4,5, and 2,3 modeled with A,B,D chains of the crotoxin pdb corresponding to the A subunit.
 
