@@ -20,7 +20,7 @@ Schramer, N. Jade Mellor, Edward A. Myers, Christopher Parkinson
 
 Models were made following modeller basic tutorial using especifications
 from [Whittington et
-al. $2018$](https://academic.oup.com/mbe/article/35/4/887/4797214)
+al. (2018)](https://academic.oup.com/mbe/article/35/4/887/4797214)
 
 # Crotoxin-like Subunit
 
@@ -85,6 +85,8 @@ the B subunit.
 
 #### CgSCrotA
 
+![3d model](pictures/CgSCrotA.gif)
+
 Alfa subunit from the south population without cleavage modeled with D
 chain of the crotoxin pdb corresponding to the B subunit. The results
 from this run were used as input for
@@ -92,7 +94,7 @@ from this run were used as input for
 Solvent Accesible Surface Area (SASA). The file used was
 CgSCrotA.B99990004.pdb, as it has the lowest DOPE-HR score, following
 [Whittington et
-al. $2018$](https://academic.oup.com/mbe/article/35/4/887/4797214)
+al. (2018)](https://academic.oup.com/mbe/article/35/4/887/4797214)
 
 ``` bash
 tail -n 13 CgSCrotA/model-single.log
